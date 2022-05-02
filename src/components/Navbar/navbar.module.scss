@@ -1,0 +1,9 @@
+@import "styles/colors";
+
+.navbar {
+  background-color: $dark;
+  padding: 0.8rem;
+  & img {
+    max-width: 10rem;
+  }
+}
