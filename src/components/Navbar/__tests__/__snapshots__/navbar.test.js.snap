@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render correctly 1`] = `
+<nav
+  className="navbar navbar navbar-expand-lg fixed-top"
+>
+  <span
+    className="navbar-brand"
+  >
+    <img
+      alt="Pipedrive"
+      src="/images/logo.png"
+    />
+  </span>
+</nav>
+`;
