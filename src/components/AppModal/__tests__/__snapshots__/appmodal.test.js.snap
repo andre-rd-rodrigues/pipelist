@@ -1,0 +1,3136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Modal should render correct modal type according to prop 1`] = `
+<AppModal
+  onHide={[MockFunction]}
+  show={true}
+  type="checkout_success"
+>
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    className="appModalSuccess"
+    data-testid="checkout_success_modal"
+    dialogAs={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    enforceFocus={true}
+    keyboard={true}
+    onHide={[MockFunction]}
+    restoreFocus={true}
+    show={true}
+  >
+    <Modal
+      autoFocus={true}
+      backdrop={true}
+      backdropTransition={[Function]}
+      enforceFocus={true}
+      keyboard={true}
+      manager={
+        BootstrapModalManager {
+          "handleContainerOverflow": true,
+          "isRTL": false,
+          "modals": Array [
+            Object {
+              "add": [Function],
+              "backdrop": <div
+                class="fade modal-backdrop show"
+              />,
+              "dialog": <div
+                aria-modal="true"
+                class="fade appmodal modal show"
+                role="dialog"
+                style="display: block; padding-right: 0px;"
+                tabindex="-1"
+              >
+                <div
+                  class="modal-dialog"
+                >
+                  <div
+                    class="modal-content"
+                  >
+                    <div
+                      class="modal-header"
+                    >
+                      <div
+                        class="modal-title h4"
+                      />
+                      <button
+                        aria-label="Close"
+                        class="btn-close"
+                        type="button"
+                      />
+                    </div>
+                    <div
+                      class="modal-body"
+                    >
+                      <p />
+                    </div>
+                    <div
+                      class="modal-footer"
+                    >
+                      <button
+                        variant="secondary"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+              "isTopModal": [Function],
+              "remove": [Function],
+              "setBackdropRef": [Function],
+              "setDialogRef": [Function],
+            },
+            Object {
+              "add": [Function],
+              "backdrop": <div
+                class="fade modal-backdrop show"
+              />,
+              "dialog": <div
+                aria-modal="true"
+                class="fade appModalSuccess modal show"
+                role="dialog"
+                style="display: block; padding-right: 0px;"
+                tabindex="-1"
+              >
+                <div
+                  class="modal-dialog"
+                  data-testid="checkout_success_modal"
+                >
+                  <div
+                    class="modal-content"
+                  >
+                    <div
+                      class="modal-header"
+                    >
+                      <div
+                        class="modal-title h4"
+                      />
+                    </div>
+                    <div
+                      class="modal-body"
+                    >
+                      <div
+                        style="width: 200px; height: 200px; margin: auto;"
+                      >
+                        <svg
+                          height="512"
+                          preserveAspectRatio="xMidYMid slice"
+                          style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+                          viewBox="0 0 512 512"
+                          width="512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <defs>
+                            <clippath
+                              id="__lottie_element_2"
+                            >
+                              <rect
+                                height="512"
+                                width="512"
+                                x="0"
+                                y="0"
+                              />
+                            </clippath>
+                          </defs>
+                          <g
+                            clip-path="url(#__lottie_element_2)"
+                          >
+                            <g
+                              style="display: none;"
+                            >
+                              <g>
+                                <path />
+                              </g>
+                            </g>
+                            <g
+                              opacity="1"
+                              style="display: block;"
+                              transform="matrix(0,0,0,0,256,257.8599853515625)"
+                            >
+                              <g
+                                opacity="1"
+                                transform="matrix(1,0,0,1,0,-3)"
+                              >
+                                <path
+                                  d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                  fill="rgb(199,241,224)"
+                                  fill-opacity="1"
+                                />
+                                <path
+                                  d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                  fill-opacity="0"
+                                  stroke="rgb(255,255,255)"
+                                  stroke-linecap="butt"
+                                  stroke-linejoin="miter"
+                                  stroke-miterlimit="4"
+                                  stroke-opacity="1"
+                                  stroke-width="2"
+                                />
+                              </g>
+                            </g>
+                            <g
+                              opacity="1"
+                              style="display: block;"
+                              transform="matrix(0,0,0,0,256,257.8599853515625)"
+                            >
+                              <g
+                                opacity="1"
+                                transform="matrix(1,0,0,1,0,-3)"
+                              >
+                                <path
+                                  d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                  fill="rgb(44,218,148)"
+                                  fill-opacity="1"
+                                />
+                              </g>
+                            </g>
+                            <g
+                              opacity="1"
+                              style="display: block;"
+                              transform="matrix(1,0,0,1,256,256)"
+                            >
+                              <g
+                                opacity="1"
+                                transform="matrix(1,0,0,1,0,0)"
+                              >
+                                <path
+                                  d="M0 0"
+                                  fill-opacity="0"
+                                  stroke="rgb(255,255,255)"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-opacity="1"
+                                  stroke-width="30"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <p>
+                        Thank you for your order! 
+                        <br />
+                        You will soon receive an email with all updates.
+                      </p>
+                    </div>
+                    <div
+                      class="modal-footer"
+                    >
+                      <button>
+                        Got it!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+              "isTopModal": [Function],
+              "remove": [Function],
+              "setBackdropRef": [Function],
+              "setDialogRef": [Function],
+            },
+          ],
+          "ownerDocument": undefined,
+          "state": Object {
+            "scrollBarWidth": 1024,
+            "style": Object {
+              "overflow": "",
+              "paddingRight": "",
+            },
+          },
+        }
+      }
+      onEnter={[Function]}
+      onEntering={[Function]}
+      onEscapeKeyDown={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onHide={[MockFunction]}
+      renderBackdrop={[Function]}
+      renderDialog={[Function]}
+      restoreFocus={true}
+      show={true}
+      transition={[Function]}
+    >
+      <Portal
+        containerInfo={
+          <body
+            class="modal-open"
+            data-rr-ui-modal-open=""
+            style="padding-right: 1024px;"
+          >
+            <div
+              class="fade modal-backdrop show"
+            />
+            <div
+              aria-modal="true"
+              class="fade appmodal modal show"
+              role="dialog"
+              style="display: block; padding-right: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="modal-dialog"
+              >
+                <div
+                  class="modal-content"
+                >
+                  <div
+                    class="modal-header"
+                  >
+                    <div
+                      class="modal-title h4"
+                    />
+                    <button
+                      aria-label="Close"
+                      class="btn-close"
+                      type="button"
+                    />
+                  </div>
+                  <div
+                    class="modal-body"
+                  >
+                    <p />
+                  </div>
+                  <div
+                    class="modal-footer"
+                  >
+                    <button
+                      variant="secondary"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="fade modal-backdrop show"
+            />
+            <div
+              aria-modal="true"
+              class="fade appModalSuccess modal show"
+              role="dialog"
+              style="display: block; padding-right: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="modal-dialog"
+                data-testid="checkout_success_modal"
+              >
+                <div
+                  class="modal-content"
+                >
+                  <div
+                    class="modal-header"
+                  >
+                    <div
+                      class="modal-title h4"
+                    />
+                  </div>
+                  <div
+                    class="modal-body"
+                  >
+                    <div
+                      style="width: 200px; height: 200px; margin: auto;"
+                    >
+                      <svg
+                        height="512"
+                        preserveAspectRatio="xMidYMid slice"
+                        style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+                        viewBox="0 0 512 512"
+                        width="512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <defs>
+                          <clippath
+                            id="__lottie_element_2"
+                          >
+                            <rect
+                              height="512"
+                              width="512"
+                              x="0"
+                              y="0"
+                            />
+                          </clippath>
+                        </defs>
+                        <g
+                          clip-path="url(#__lottie_element_2)"
+                        >
+                          <g
+                            style="display: none;"
+                          >
+                            <g>
+                              <path />
+                            </g>
+                          </g>
+                          <g
+                            opacity="1"
+                            style="display: block;"
+                            transform="matrix(0,0,0,0,256,257.8599853515625)"
+                          >
+                            <g
+                              opacity="1"
+                              transform="matrix(1,0,0,1,0,-3)"
+                            >
+                              <path
+                                d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                fill="rgb(199,241,224)"
+                                fill-opacity="1"
+                              />
+                              <path
+                                d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                fill-opacity="0"
+                                stroke="rgb(255,255,255)"
+                                stroke-linecap="butt"
+                                stroke-linejoin="miter"
+                                stroke-miterlimit="4"
+                                stroke-opacity="1"
+                                stroke-width="2"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            opacity="1"
+                            style="display: block;"
+                            transform="matrix(0,0,0,0,256,257.8599853515625)"
+                          >
+                            <g
+                              opacity="1"
+                              transform="matrix(1,0,0,1,0,-3)"
+                            >
+                              <path
+                                d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                fill="rgb(44,218,148)"
+                                fill-opacity="1"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            opacity="1"
+                            style="display: block;"
+                            transform="matrix(1,0,0,1,256,256)"
+                          >
+                            <g
+                              opacity="1"
+                              transform="matrix(1,0,0,1,0,0)"
+                            >
+                              <path
+                                d="M0 0"
+                                fill-opacity="0"
+                                stroke="rgb(255,255,255)"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-opacity="1"
+                                stroke-width="30"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <p>
+                      Thank you for your order! 
+                      <br />
+                      You will soon receive an email with all updates.
+                    </p>
+                  </div>
+                  <div
+                    class="modal-footer"
+                  >
+                    <button>
+                      Got it!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        }
+      >
+        <BackdropTransition
+          appear={true}
+          in={true}
+        >
+          <Fade
+            appear={true}
+            in={true}
+            mountOnEnter={false}
+            timeout={null}
+            unmountOnExit={false}
+          >
+            <ForwardRef
+              addEndListener={[Function]}
+              appear={true}
+              childRef={[Function]}
+              in={true}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              timeout={null}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={true}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                nodeRef={
+                  Object {
+                    "current": <div
+                      class="fade modal-backdrop show"
+                    />,
+                  }
+                }
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={null}
+                unmountOnExit={false}
+              >
+                <div
+                  className="fade modal-backdrop show"
+                  onClick={[Function]}
+                />
+              </Transition>
+            </ForwardRef>
+          </Fade>
+        </BackdropTransition>
+        <DialogTransition
+          appear={true}
+          in={true}
+          onEnter={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          unmountOnExit={true}
+        >
+          <Fade
+            appear={true}
+            in={true}
+            mountOnEnter={false}
+            onEnter={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            timeout={null}
+            unmountOnExit={true}
+          >
+            <ForwardRef
+              addEndListener={[Function]}
+              appear={true}
+              childRef={[Function]}
+              in={true}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              timeout={null}
+              unmountOnExit={true}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={true}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                nodeRef={
+                  Object {
+                    "current": <div
+                      aria-modal="true"
+                      class="fade appModalSuccess modal show"
+                      role="dialog"
+                      style="display: block; padding-right: 0px;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="modal-dialog"
+                        data-testid="checkout_success_modal"
+                      >
+                        <div
+                          class="modal-content"
+                        >
+                          <div
+                            class="modal-header"
+                          >
+                            <div
+                              class="modal-title h4"
+                            />
+                          </div>
+                          <div
+                            class="modal-body"
+                          >
+                            <div
+                              style="width: 200px; height: 200px; margin: auto;"
+                            >
+                              <svg
+                                height="512"
+                                preserveAspectRatio="xMidYMid slice"
+                                style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+                                viewBox="0 0 512 512"
+                                width="512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <defs>
+                                  <clippath
+                                    id="__lottie_element_2"
+                                  >
+                                    <rect
+                                      height="512"
+                                      width="512"
+                                      x="0"
+                                      y="0"
+                                    />
+                                  </clippath>
+                                </defs>
+                                <g
+                                  clip-path="url(#__lottie_element_2)"
+                                >
+                                  <g
+                                    style="display: none;"
+                                  >
+                                    <g>
+                                      <path />
+                                    </g>
+                                  </g>
+                                  <g
+                                    opacity="1"
+                                    style="display: block;"
+                                    transform="matrix(0,0,0,0,256,257.8599853515625)"
+                                  >
+                                    <g
+                                      opacity="1"
+                                      transform="matrix(1,0,0,1,0,-3)"
+                                    >
+                                      <path
+                                        d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                        fill="rgb(199,241,224)"
+                                        fill-opacity="1"
+                                      />
+                                      <path
+                                        d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                        fill-opacity="0"
+                                        stroke="rgb(255,255,255)"
+                                        stroke-linecap="butt"
+                                        stroke-linejoin="miter"
+                                        stroke-miterlimit="4"
+                                        stroke-opacity="1"
+                                        stroke-width="2"
+                                      />
+                                    </g>
+                                  </g>
+                                  <g
+                                    opacity="1"
+                                    style="display: block;"
+                                    transform="matrix(0,0,0,0,256,257.8599853515625)"
+                                  >
+                                    <g
+                                      opacity="1"
+                                      transform="matrix(1,0,0,1,0,-3)"
+                                    >
+                                      <path
+                                        d=" M0,-118 C65.12419891357422,-118 118,-65.12419891357422 118,0 C118,65.12419891357422 65.12419891357422,118 0,118 C-65.12419891357422,118 -118,65.12419891357422 -118,0 C-118,-65.12419891357422 -65.12419891357422,-118 0,-118z"
+                                        fill="rgb(44,218,148)"
+                                        fill-opacity="1"
+                                      />
+                                    </g>
+                                  </g>
+                                  <g
+                                    opacity="1"
+                                    style="display: block;"
+                                    transform="matrix(1,0,0,1,256,256)"
+                                  >
+                                    <g
+                                      opacity="1"
+                                      transform="matrix(1,0,0,1,0,0)"
+                                    >
+                                      <path
+                                        d="M0 0"
+                                        fill-opacity="0"
+                                        stroke="rgb(255,255,255)"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-opacity="1"
+                                        stroke-width="30"
+                                      />
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                            <p>
+                              Thank you for your order! 
+                              <br />
+                              You will soon receive an email with all updates.
+                            </p>
+                          </div>
+                          <div
+                            class="modal-footer"
+                          >
+                            <button>
+                              Got it!
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>,
+                  }
+                }
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={null}
+                unmountOnExit={true}
+              >
+                <div
+                  aria-modal={true}
+                  className="fade appModalSuccess modal show"
+                  onClick={[Function]}
+                  onMouseUp={[Function]}
+                  role="dialog"
+                  style={
+                    Object {
+                      "paddingLeft": undefined,
+                      "paddingRight": 0,
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <ModalDialog
+                    data-testid="checkout_success_modal"
+                    onMouseDown={[Function]}
+                  >
+                    <div
+                      className="modal-dialog"
+                      data-testid="checkout_success_modal"
+                      onMouseDown={[Function]}
+                    >
+                      <div
+                        className="modal-content"
+                      >
+                        <ModalHeader
+                          closeButton={false}
+                          closeLabel="Close"
+                        >
+                          <ForwardRef
+                            className="modal-header"
+                            closeButton={false}
+                            closeLabel="Close"
+                          >
+                            <div
+                              className="modal-header"
+                            >
+                              <ModalTitle>
+                                <ForwardRef
+                                  className="modal-title"
+                                >
+                                  <div
+                                    className="modal-title h4"
+                                  />
+                                </ForwardRef>
+                              </ModalTitle>
+                            </div>
+                          </ForwardRef>
+                        </ModalHeader>
+                        <ModalBody>
+                          <div
+                            className="modal-body"
+                          >
+                            <LottieAnimation
+                              lottie={
+                                Object {
+                                  "assets": Array [],
+                                  "ddd": 0,
+                                  "fr": 60,
+                                  "h": 512,
+                                  "ip": 0,
+                                  "layers": Array [
+                                    Object {
+                                      "ao": 0,
+                                      "bm": 0,
+                                      "ddd": 0,
+                                      "ind": 1,
+                                      "ip": 0,
+                                      "ks": Object {
+                                        "a": Object {
+                                          "a": 0,
+                                          "ix": 1,
+                                          "k": Array [
+                                            0,
+                                            0,
+                                            0,
+                                          ],
+                                        },
+                                        "o": Object {
+                                          "a": 0,
+                                          "ix": 11,
+                                          "k": 100,
+                                        },
+                                        "p": Object {
+                                          "a": 0,
+                                          "ix": 2,
+                                          "k": Array [
+                                            256,
+                                            256,
+                                            0,
+                                          ],
+                                        },
+                                        "r": Object {
+                                          "a": 0,
+                                          "ix": 10,
+                                          "k": 0,
+                                        },
+                                        "s": Object {
+                                          "a": 0,
+                                          "ix": 6,
+                                          "k": Array [
+                                            100,
+                                            100,
+                                            100,
+                                          ],
+                                        },
+                                      },
+                                      "nm": "check",
+                                      "op": 240,
+                                      "shapes": Array [
+                                        Object {
+                                          "bm": 0,
+                                          "cix": 2,
+                                          "hd": false,
+                                          "it": Array [
+                                            Object {
+                                              "hd": false,
+                                              "ind": 0,
+                                              "ix": 1,
+                                              "ks": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Object {
+                                                  "c": false,
+                                                  "i": Array [
+                                                    Array [
+                                                      0,
+                                                      0,
+                                                    ],
+                                                    Array [
+                                                      0,
+                                                      0,
+                                                    ],
+                                                    Array [
+                                                      0,
+                                                      0,
+                                                    ],
+                                                  ],
+                                                  "o": Array [
+                                                    Array [
+                                                      0,
+                                                      0,
+                                                    ],
+                                                    Array [
+                                                      0,
+                                                      0,
+                                                    ],
+                                                    Array [
+                                                      0,
+                                                      0,
+                                                    ],
+                                                  ],
+                                                  "v": Array [
+                                                    Array [
+                                                      -82.5,
+                                                      4.5,
+                                                    ],
+                                                    Array [
+                                                      -31,
+                                                      55,
+                                                    ],
+                                                    Array [
+                                                      73,
+                                                      -52.5,
+                                                    ],
+                                                  ],
+                                                },
+                                              },
+                                              "mn": "ADBE Vector Shape - Group",
+                                              "nm": "Path 1",
+                                              "ty": "sh",
+                                            },
+                                            Object {
+                                              "e": Object {
+                                                "a": 1,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  Object {
+                                                    "i": Object {
+                                                      "x": Array [
+                                                        0.667,
+                                                      ],
+                                                      "y": Array [
+                                                        1,
+                                                      ],
+                                                    },
+                                                    "o": Object {
+                                                      "x": Array [
+                                                        1,
+                                                      ],
+                                                      "y": Array [
+                                                        0.076,
+                                                      ],
+                                                    },
+                                                    "s": Array [
+                                                      0,
+                                                    ],
+                                                    "t": 60,
+                                                  },
+                                                  Object {
+                                                    "s": Array [
+                                                      100,
+                                                    ],
+                                                    "t": 85,
+                                                  },
+                                                ],
+                                              },
+                                              "hd": false,
+                                              "ix": 2,
+                                              "m": 1,
+                                              "mn": "ADBE Vector Filter - Trim",
+                                              "nm": "Trim Paths 1",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": 0,
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 1,
+                                                "k": 0,
+                                              },
+                                              "ty": "tm",
+                                            },
+                                            Object {
+                                              "bm": 0,
+                                              "c": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  1,
+                                                  1,
+                                                  1,
+                                                  1,
+                                                ],
+                                              },
+                                              "hd": false,
+                                              "lc": 2,
+                                              "lj": 2,
+                                              "mn": "ADBE Vector Graphic - Stroke",
+                                              "nm": "Stroke 1",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 100,
+                                              },
+                                              "ty": "st",
+                                              "w": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 30,
+                                              },
+                                            },
+                                            Object {
+                                              "a": Object {
+                                                "a": 0,
+                                                "ix": 1,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "nm": "Transform",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 7,
+                                                "k": 100,
+                                              },
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "r": Object {
+                                                "a": 0,
+                                                "ix": 6,
+                                                "k": 0,
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  100,
+                                                  100,
+                                                ],
+                                              },
+                                              "sa": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 0,
+                                              },
+                                              "sk": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 0,
+                                              },
+                                              "ty": "tr",
+                                            },
+                                          ],
+                                          "ix": 1,
+                                          "mn": "ADBE Vector Group",
+                                          "nm": "Shape 1",
+                                          "np": 4,
+                                          "ty": "gr",
+                                        },
+                                      ],
+                                      "sr": 1,
+                                      "st": 0,
+                                      "ty": 4,
+                                    },
+                                    Object {
+                                      "ao": 0,
+                                      "bm": 0,
+                                      "ddd": 0,
+                                      "ind": 3,
+                                      "ip": 0,
+                                      "ks": Object {
+                                        "a": Object {
+                                          "a": 0,
+                                          "ix": 1,
+                                          "k": Array [
+                                            0,
+                                            0,
+                                            0,
+                                          ],
+                                        },
+                                        "o": Object {
+                                          "a": 0,
+                                          "ix": 11,
+                                          "k": 100,
+                                        },
+                                        "p": Object {
+                                          "a": 0,
+                                          "ix": 2,
+                                          "k": Array [
+                                            256,
+                                            257.86,
+                                            0,
+                                          ],
+                                        },
+                                        "r": Object {
+                                          "a": 0,
+                                          "ix": 10,
+                                          "k": 0,
+                                        },
+                                        "s": Object {
+                                          "a": 1,
+                                          "ix": 6,
+                                          "k": Array [
+                                            Object {
+                                              "i": Object {
+                                                "x": Array [
+                                                  0,
+                                                  0,
+                                                  0.833,
+                                                ],
+                                                "y": Array [
+                                                  0.98,
+                                                  0.98,
+                                                  -66.114,
+                                                ],
+                                              },
+                                              "o": Object {
+                                                "x": Array [
+                                                  0.656,
+                                                  0.656,
+                                                  0.167,
+                                                ],
+                                                "y": Array [
+                                                  0.872,
+                                                  0.872,
+                                                  67.114,
+                                                ],
+                                              },
+                                              "s": Array [
+                                                0,
+                                                0,
+                                                100,
+                                              ],
+                                              "t": 20,
+                                            },
+                                            Object {
+                                              "s": Array [
+                                                150,
+                                                150,
+                                                100,
+                                              ],
+                                              "t": 60,
+                                            },
+                                          ],
+                                        },
+                                      },
+                                      "nm": "Shape Layer 2",
+                                      "op": 240,
+                                      "shapes": Array [
+                                        Object {
+                                          "bm": 0,
+                                          "cix": 2,
+                                          "hd": false,
+                                          "it": Array [
+                                            Object {
+                                              "d": 1,
+                                              "hd": false,
+                                              "mn": "ADBE Vector Shape - Ellipse",
+                                              "nm": "Ellipse Path 1",
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  236,
+                                                  236,
+                                                ],
+                                              },
+                                              "ty": "el",
+                                            },
+                                            Object {
+                                              "bm": 0,
+                                              "c": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": Array [
+                                                  0.172549019608,
+                                                  0.854901960784,
+                                                  0.580392156863,
+                                                  1,
+                                                ],
+                                              },
+                                              "hd": false,
+                                              "mn": "ADBE Vector Graphic - Fill",
+                                              "nm": "Fill 1",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 100,
+                                              },
+                                              "r": 1,
+                                              "ty": "fl",
+                                            },
+                                            Object {
+                                              "a": Object {
+                                                "a": 0,
+                                                "ix": 1,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "nm": "Transform",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 7,
+                                                "k": 100,
+                                              },
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  0,
+                                                  -3,
+                                                ],
+                                              },
+                                              "r": Object {
+                                                "a": 0,
+                                                "ix": 6,
+                                                "k": 0,
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  100,
+                                                  100,
+                                                ],
+                                              },
+                                              "sa": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 0,
+                                              },
+                                              "sk": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 0,
+                                              },
+                                              "ty": "tr",
+                                            },
+                                          ],
+                                          "ix": 1,
+                                          "mn": "ADBE Vector Group",
+                                          "nm": "Ellipse 1",
+                                          "np": 3,
+                                          "ty": "gr",
+                                        },
+                                      ],
+                                      "sr": 1,
+                                      "st": 0,
+                                      "ty": 4,
+                                    },
+                                    Object {
+                                      "ao": 0,
+                                      "bm": 0,
+                                      "ddd": 0,
+                                      "ind": 4,
+                                      "ip": 0,
+                                      "ks": Object {
+                                        "a": Object {
+                                          "a": 0,
+                                          "ix": 1,
+                                          "k": Array [
+                                            0,
+                                            0,
+                                            0,
+                                          ],
+                                        },
+                                        "o": Object {
+                                          "a": 1,
+                                          "ix": 11,
+                                          "k": Array [
+                                            Object {
+                                              "i": Object {
+                                                "x": Array [
+                                                  0.626,
+                                                ],
+                                                "y": Array [
+                                                  0.729,
+                                                ],
+                                              },
+                                              "o": Object {
+                                                "x": Array [
+                                                  0.912,
+                                                ],
+                                                "y": Array [
+                                                  0.073,
+                                                ],
+                                              },
+                                              "s": Array [
+                                                100,
+                                              ],
+                                              "t": 76,
+                                            },
+                                            Object {
+                                              "s": Array [
+                                                0,
+                                              ],
+                                              "t": 119,
+                                            },
+                                          ],
+                                        },
+                                        "p": Object {
+                                          "a": 0,
+                                          "ix": 2,
+                                          "k": Array [
+                                            256,
+                                            257.86,
+                                            0,
+                                          ],
+                                        },
+                                        "r": Object {
+                                          "a": 0,
+                                          "ix": 10,
+                                          "k": 0,
+                                        },
+                                        "s": Object {
+                                          "a": 1,
+                                          "ix": 6,
+                                          "k": Array [
+                                            Object {
+                                              "i": Object {
+                                                "x": Array [
+                                                  0,
+                                                  0,
+                                                  0.667,
+                                                ],
+                                                "y": Array [
+                                                  0.999,
+                                                  0.999,
+                                                  1,
+                                                ],
+                                              },
+                                              "o": Object {
+                                                "x": Array [
+                                                  0.477,
+                                                  0.477,
+                                                  0.333,
+                                                ],
+                                                "y": Array [
+                                                  0.587,
+                                                  0.587,
+                                                  0,
+                                                ],
+                                              },
+                                              "s": Array [
+                                                0,
+                                                0,
+                                                100,
+                                              ],
+                                              "t": 10,
+                                            },
+                                            Object {
+                                              "i": Object {
+                                                "x": Array [
+                                                  0.833,
+                                                  0.833,
+                                                  0.833,
+                                                ],
+                                                "y": Array [
+                                                  1,
+                                                  1,
+                                                  1,
+                                                ],
+                                              },
+                                              "o": Object {
+                                                "x": Array [
+                                                  0.167,
+                                                  0.167,
+                                                  0.167,
+                                                ],
+                                                "y": Array [
+                                                  0,
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "s": Array [
+                                                150,
+                                                150,
+                                                100,
+                                              ],
+                                              "t": 50,
+                                            },
+                                            Object {
+                                              "i": Object {
+                                                "x": Array [
+                                                  0.833,
+                                                  0.833,
+                                                  0.833,
+                                                ],
+                                                "y": Array [
+                                                  1,
+                                                  1,
+                                                  1,
+                                                ],
+                                              },
+                                              "o": Object {
+                                                "x": Array [
+                                                  0.167,
+                                                  0.167,
+                                                  0.167,
+                                                ],
+                                                "y": Array [
+                                                  0,
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "s": Array [
+                                                150,
+                                                150,
+                                                100,
+                                              ],
+                                              "t": 76,
+                                            },
+                                            Object {
+                                              "s": Array [
+                                                210,
+                                                210,
+                                                100,
+                                              ],
+                                              "t": 123,
+                                            },
+                                          ],
+                                        },
+                                      },
+                                      "nm": "Shape Layer 1",
+                                      "op": 240,
+                                      "shapes": Array [
+                                        Object {
+                                          "bm": 0,
+                                          "cix": 2,
+                                          "hd": false,
+                                          "it": Array [
+                                            Object {
+                                              "d": 1,
+                                              "hd": false,
+                                              "mn": "ADBE Vector Shape - Ellipse",
+                                              "nm": "Ellipse Path 1",
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  236,
+                                                  236,
+                                                ],
+                                              },
+                                              "ty": "el",
+                                            },
+                                            Object {
+                                              "bm": 0,
+                                              "c": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  1,
+                                                  1,
+                                                  1,
+                                                  1,
+                                                ],
+                                              },
+                                              "hd": false,
+                                              "lc": 1,
+                                              "lj": 1,
+                                              "ml": 4,
+                                              "mn": "ADBE Vector Graphic - Stroke",
+                                              "nm": "Stroke 1",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 100,
+                                              },
+                                              "ty": "st",
+                                              "w": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 2,
+                                              },
+                                            },
+                                            Object {
+                                              "bm": 0,
+                                              "c": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": Array [
+                                                  0.783504889993,
+                                                  0.945098039216,
+                                                  0.880089314779,
+                                                  1,
+                                                ],
+                                              },
+                                              "hd": false,
+                                              "mn": "ADBE Vector Graphic - Fill",
+                                              "nm": "Fill 1",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 100,
+                                              },
+                                              "r": 1,
+                                              "ty": "fl",
+                                            },
+                                            Object {
+                                              "a": Object {
+                                                "a": 0,
+                                                "ix": 1,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "nm": "Transform",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 7,
+                                                "k": 100,
+                                              },
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  0,
+                                                  -3,
+                                                ],
+                                              },
+                                              "r": Object {
+                                                "a": 0,
+                                                "ix": 6,
+                                                "k": 0,
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  100,
+                                                  100,
+                                                ],
+                                              },
+                                              "sa": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 0,
+                                              },
+                                              "sk": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 0,
+                                              },
+                                              "ty": "tr",
+                                            },
+                                          ],
+                                          "ix": 1,
+                                          "mn": "ADBE Vector Group",
+                                          "nm": "Ellipse 1",
+                                          "np": 3,
+                                          "ty": "gr",
+                                        },
+                                      ],
+                                      "sr": 1,
+                                      "st": 0,
+                                      "ty": 4,
+                                    },
+                                    Object {
+                                      "ao": 0,
+                                      "bm": 0,
+                                      "ddd": 0,
+                                      "hidden": 0,
+                                      "ind": 5,
+                                      "ip": 240,
+                                      "ks": Object {
+                                        "a": Object {
+                                          "a": 0,
+                                          "ix": 1,
+                                          "k": Array [
+                                            0,
+                                            0,
+                                            0,
+                                          ],
+                                        },
+                                        "o": Object {
+                                          "a": 0,
+                                          "ix": 11,
+                                          "k": 100,
+                                        },
+                                        "p": Object {
+                                          "a": 0,
+                                          "ix": 2,
+                                          "k": Array [
+                                            256,
+                                            256,
+                                            0,
+                                          ],
+                                        },
+                                        "r": Object {
+                                          "a": 0,
+                                          "ix": 10,
+                                          "k": 0,
+                                        },
+                                        "s": Object {
+                                          "a": 0,
+                                          "ix": 6,
+                                          "k": Array [
+                                            100,
+                                            100,
+                                            100,
+                                          ],
+                                        },
+                                      },
+                                      "nm": "BG",
+                                      "op": 240,
+                                      "shapes": Array [
+                                        Object {
+                                          "bm": 0,
+                                          "cix": 2,
+                                          "hd": false,
+                                          "it": Array [
+                                            Object {
+                                              "d": 1,
+                                              "hd": false,
+                                              "mn": "ADBE Vector Shape - Rect",
+                                              "nm": "Rectangle Path 1",
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "r": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 0,
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  554,
+                                                  556,
+                                                ],
+                                              },
+                                              "ty": "rc",
+                                            },
+                                            Object {
+                                              "bm": 0,
+                                              "c": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": Array [
+                                                  1,
+                                                  1,
+                                                  1,
+                                                  1,
+                                                ],
+                                              },
+                                              "hd": false,
+                                              "mn": "ADBE Vector Graphic - Fill",
+                                              "nm": "Fill 1",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 100,
+                                              },
+                                              "r": 1,
+                                              "ty": "fl",
+                                            },
+                                            Object {
+                                              "a": Object {
+                                                "a": 0,
+                                                "ix": 1,
+                                                "k": Array [
+                                                  0,
+                                                  0,
+                                                ],
+                                              },
+                                              "nm": "Transform",
+                                              "o": Object {
+                                                "a": 0,
+                                                "ix": 7,
+                                                "k": 100,
+                                              },
+                                              "p": Object {
+                                                "a": 0,
+                                                "ix": 2,
+                                                "k": Array [
+                                                  -1,
+                                                  6,
+                                                ],
+                                              },
+                                              "r": Object {
+                                                "a": 0,
+                                                "ix": 6,
+                                                "k": 0,
+                                              },
+                                              "s": Object {
+                                                "a": 0,
+                                                "ix": 3,
+                                                "k": Array [
+                                                  100,
+                                                  100,
+                                                ],
+                                              },
+                                              "sa": Object {
+                                                "a": 0,
+                                                "ix": 5,
+                                                "k": 0,
+                                              },
+                                              "sk": Object {
+                                                "a": 0,
+                                                "ix": 4,
+                                                "k": 0,
+                                              },
+                                              "ty": "tr",
+                                            },
+                                          ],
+                                          "ix": 1,
+                                          "mn": "ADBE Vector Group",
+                                          "nm": "Rectangle 1",
+                                          "np": 3,
+                                          "ty": "gr",
+                                        },
+                                      ],
+                                      "sr": 1,
+                                      "st": 0,
+                                      "ty": 4,
+                                    },
+                                  ],
+                                  "markers": Array [],
+                                  "meta": Object {
+                                    "a": "",
+                                    "d": "",
+                                    "g": "LottieFiles AE 1.0.0",
+                                    "k": "",
+                                    "tc": "",
+                                  },
+                                  "nm": "HDFC Success",
+                                  "op": 130,
+                                  "v": "4.8.0",
+                                  "w": 512,
+                                }
+                              }
+                            >
+                              <Component
+                                animationData={
+                                  Object {
+                                    "assets": Array [],
+                                    "ddd": 0,
+                                    "fr": 60,
+                                    "h": 512,
+                                    "ip": 0,
+                                    "layers": Array [
+                                      Object {
+                                        "ao": 0,
+                                        "bm": 0,
+                                        "ddd": 0,
+                                        "ind": 1,
+                                        "ip": 0,
+                                        "ks": Object {
+                                          "a": Object {
+                                            "a": 0,
+                                            "ix": 1,
+                                            "k": Array [
+                                              0,
+                                              0,
+                                              0,
+                                            ],
+                                          },
+                                          "o": Object {
+                                            "a": 0,
+                                            "ix": 11,
+                                            "k": 100,
+                                          },
+                                          "p": Object {
+                                            "a": 0,
+                                            "ix": 2,
+                                            "k": Array [
+                                              256,
+                                              256,
+                                              0,
+                                            ],
+                                          },
+                                          "r": Object {
+                                            "a": 0,
+                                            "ix": 10,
+                                            "k": 0,
+                                          },
+                                          "s": Object {
+                                            "a": 0,
+                                            "ix": 6,
+                                            "k": Array [
+                                              100,
+                                              100,
+                                              100,
+                                            ],
+                                          },
+                                        },
+                                        "nm": "check",
+                                        "op": 240,
+                                        "shapes": Array [
+                                          Object {
+                                            "bm": 0,
+                                            "cix": 2,
+                                            "hd": false,
+                                            "it": Array [
+                                              Object {
+                                                "hd": false,
+                                                "ind": 0,
+                                                "ix": 1,
+                                                "ks": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Object {
+                                                    "c": false,
+                                                    "i": Array [
+                                                      Array [
+                                                        0,
+                                                        0,
+                                                      ],
+                                                      Array [
+                                                        0,
+                                                        0,
+                                                      ],
+                                                      Array [
+                                                        0,
+                                                        0,
+                                                      ],
+                                                    ],
+                                                    "o": Array [
+                                                      Array [
+                                                        0,
+                                                        0,
+                                                      ],
+                                                      Array [
+                                                        0,
+                                                        0,
+                                                      ],
+                                                      Array [
+                                                        0,
+                                                        0,
+                                                      ],
+                                                    ],
+                                                    "v": Array [
+                                                      Array [
+                                                        -82.5,
+                                                        4.5,
+                                                      ],
+                                                      Array [
+                                                        -31,
+                                                        55,
+                                                      ],
+                                                      Array [
+                                                        73,
+                                                        -52.5,
+                                                      ],
+                                                    ],
+                                                  },
+                                                },
+                                                "mn": "ADBE Vector Shape - Group",
+                                                "nm": "Path 1",
+                                                "ty": "sh",
+                                              },
+                                              Object {
+                                                "e": Object {
+                                                  "a": 1,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    Object {
+                                                      "i": Object {
+                                                        "x": Array [
+                                                          0.667,
+                                                        ],
+                                                        "y": Array [
+                                                          1,
+                                                        ],
+                                                      },
+                                                      "o": Object {
+                                                        "x": Array [
+                                                          1,
+                                                        ],
+                                                        "y": Array [
+                                                          0.076,
+                                                        ],
+                                                      },
+                                                      "s": Array [
+                                                        0,
+                                                      ],
+                                                      "t": 60,
+                                                    },
+                                                    Object {
+                                                      "s": Array [
+                                                        100,
+                                                      ],
+                                                      "t": 85,
+                                                    },
+                                                  ],
+                                                },
+                                                "hd": false,
+                                                "ix": 2,
+                                                "m": 1,
+                                                "mn": "ADBE Vector Filter - Trim",
+                                                "nm": "Trim Paths 1",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": 0,
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 1,
+                                                  "k": 0,
+                                                },
+                                                "ty": "tm",
+                                              },
+                                              Object {
+                                                "bm": 0,
+                                                "c": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    1,
+                                                    1,
+                                                    1,
+                                                    1,
+                                                  ],
+                                                },
+                                                "hd": false,
+                                                "lc": 2,
+                                                "lj": 2,
+                                                "mn": "ADBE Vector Graphic - Stroke",
+                                                "nm": "Stroke 1",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 100,
+                                                },
+                                                "ty": "st",
+                                                "w": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 30,
+                                                },
+                                              },
+                                              Object {
+                                                "a": Object {
+                                                  "a": 0,
+                                                  "ix": 1,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "nm": "Transform",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 7,
+                                                  "k": 100,
+                                                },
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "r": Object {
+                                                  "a": 0,
+                                                  "ix": 6,
+                                                  "k": 0,
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    100,
+                                                    100,
+                                                  ],
+                                                },
+                                                "sa": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 0,
+                                                },
+                                                "sk": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 0,
+                                                },
+                                                "ty": "tr",
+                                              },
+                                            ],
+                                            "ix": 1,
+                                            "mn": "ADBE Vector Group",
+                                            "nm": "Shape 1",
+                                            "np": 4,
+                                            "ty": "gr",
+                                          },
+                                        ],
+                                        "sr": 1,
+                                        "st": 0,
+                                        "ty": 4,
+                                      },
+                                      Object {
+                                        "ao": 0,
+                                        "bm": 0,
+                                        "ddd": 0,
+                                        "ind": 3,
+                                        "ip": 0,
+                                        "ks": Object {
+                                          "a": Object {
+                                            "a": 0,
+                                            "ix": 1,
+                                            "k": Array [
+                                              0,
+                                              0,
+                                              0,
+                                            ],
+                                          },
+                                          "o": Object {
+                                            "a": 0,
+                                            "ix": 11,
+                                            "k": 100,
+                                          },
+                                          "p": Object {
+                                            "a": 0,
+                                            "ix": 2,
+                                            "k": Array [
+                                              256,
+                                              257.86,
+                                              0,
+                                            ],
+                                          },
+                                          "r": Object {
+                                            "a": 0,
+                                            "ix": 10,
+                                            "k": 0,
+                                          },
+                                          "s": Object {
+                                            "a": 1,
+                                            "ix": 6,
+                                            "k": Array [
+                                              Object {
+                                                "i": Object {
+                                                  "x": Array [
+                                                    0,
+                                                    0,
+                                                    0.833,
+                                                  ],
+                                                  "y": Array [
+                                                    0.98,
+                                                    0.98,
+                                                    -66.114,
+                                                  ],
+                                                },
+                                                "o": Object {
+                                                  "x": Array [
+                                                    0.656,
+                                                    0.656,
+                                                    0.167,
+                                                  ],
+                                                  "y": Array [
+                                                    0.872,
+                                                    0.872,
+                                                    67.114,
+                                                  ],
+                                                },
+                                                "s": Array [
+                                                  0,
+                                                  0,
+                                                  100,
+                                                ],
+                                                "t": 20,
+                                              },
+                                              Object {
+                                                "s": Array [
+                                                  150,
+                                                  150,
+                                                  100,
+                                                ],
+                                                "t": 60,
+                                              },
+                                            ],
+                                          },
+                                        },
+                                        "nm": "Shape Layer 2",
+                                        "op": 240,
+                                        "shapes": Array [
+                                          Object {
+                                            "bm": 0,
+                                            "cix": 2,
+                                            "hd": false,
+                                            "it": Array [
+                                              Object {
+                                                "d": 1,
+                                                "hd": false,
+                                                "mn": "ADBE Vector Shape - Ellipse",
+                                                "nm": "Ellipse Path 1",
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    236,
+                                                    236,
+                                                  ],
+                                                },
+                                                "ty": "el",
+                                              },
+                                              Object {
+                                                "bm": 0,
+                                                "c": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": Array [
+                                                    0.172549019608,
+                                                    0.854901960784,
+                                                    0.580392156863,
+                                                    1,
+                                                  ],
+                                                },
+                                                "hd": false,
+                                                "mn": "ADBE Vector Graphic - Fill",
+                                                "nm": "Fill 1",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 100,
+                                                },
+                                                "r": 1,
+                                                "ty": "fl",
+                                              },
+                                              Object {
+                                                "a": Object {
+                                                  "a": 0,
+                                                  "ix": 1,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "nm": "Transform",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 7,
+                                                  "k": 100,
+                                                },
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    0,
+                                                    -3,
+                                                  ],
+                                                },
+                                                "r": Object {
+                                                  "a": 0,
+                                                  "ix": 6,
+                                                  "k": 0,
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    100,
+                                                    100,
+                                                  ],
+                                                },
+                                                "sa": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 0,
+                                                },
+                                                "sk": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 0,
+                                                },
+                                                "ty": "tr",
+                                              },
+                                            ],
+                                            "ix": 1,
+                                            "mn": "ADBE Vector Group",
+                                            "nm": "Ellipse 1",
+                                            "np": 3,
+                                            "ty": "gr",
+                                          },
+                                        ],
+                                        "sr": 1,
+                                        "st": 0,
+                                        "ty": 4,
+                                      },
+                                      Object {
+                                        "ao": 0,
+                                        "bm": 0,
+                                        "ddd": 0,
+                                        "ind": 4,
+                                        "ip": 0,
+                                        "ks": Object {
+                                          "a": Object {
+                                            "a": 0,
+                                            "ix": 1,
+                                            "k": Array [
+                                              0,
+                                              0,
+                                              0,
+                                            ],
+                                          },
+                                          "o": Object {
+                                            "a": 1,
+                                            "ix": 11,
+                                            "k": Array [
+                                              Object {
+                                                "i": Object {
+                                                  "x": Array [
+                                                    0.626,
+                                                  ],
+                                                  "y": Array [
+                                                    0.729,
+                                                  ],
+                                                },
+                                                "o": Object {
+                                                  "x": Array [
+                                                    0.912,
+                                                  ],
+                                                  "y": Array [
+                                                    0.073,
+                                                  ],
+                                                },
+                                                "s": Array [
+                                                  100,
+                                                ],
+                                                "t": 76,
+                                              },
+                                              Object {
+                                                "s": Array [
+                                                  0,
+                                                ],
+                                                "t": 119,
+                                              },
+                                            ],
+                                          },
+                                          "p": Object {
+                                            "a": 0,
+                                            "ix": 2,
+                                            "k": Array [
+                                              256,
+                                              257.86,
+                                              0,
+                                            ],
+                                          },
+                                          "r": Object {
+                                            "a": 0,
+                                            "ix": 10,
+                                            "k": 0,
+                                          },
+                                          "s": Object {
+                                            "a": 1,
+                                            "ix": 6,
+                                            "k": Array [
+                                              Object {
+                                                "i": Object {
+                                                  "x": Array [
+                                                    0,
+                                                    0,
+                                                    0.667,
+                                                  ],
+                                                  "y": Array [
+                                                    0.999,
+                                                    0.999,
+                                                    1,
+                                                  ],
+                                                },
+                                                "o": Object {
+                                                  "x": Array [
+                                                    0.477,
+                                                    0.477,
+                                                    0.333,
+                                                  ],
+                                                  "y": Array [
+                                                    0.587,
+                                                    0.587,
+                                                    0,
+                                                  ],
+                                                },
+                                                "s": Array [
+                                                  0,
+                                                  0,
+                                                  100,
+                                                ],
+                                                "t": 10,
+                                              },
+                                              Object {
+                                                "i": Object {
+                                                  "x": Array [
+                                                    0.833,
+                                                    0.833,
+                                                    0.833,
+                                                  ],
+                                                  "y": Array [
+                                                    1,
+                                                    1,
+                                                    1,
+                                                  ],
+                                                },
+                                                "o": Object {
+                                                  "x": Array [
+                                                    0.167,
+                                                    0.167,
+                                                    0.167,
+                                                  ],
+                                                  "y": Array [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "s": Array [
+                                                  150,
+                                                  150,
+                                                  100,
+                                                ],
+                                                "t": 50,
+                                              },
+                                              Object {
+                                                "i": Object {
+                                                  "x": Array [
+                                                    0.833,
+                                                    0.833,
+                                                    0.833,
+                                                  ],
+                                                  "y": Array [
+                                                    1,
+                                                    1,
+                                                    1,
+                                                  ],
+                                                },
+                                                "o": Object {
+                                                  "x": Array [
+                                                    0.167,
+                                                    0.167,
+                                                    0.167,
+                                                  ],
+                                                  "y": Array [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "s": Array [
+                                                  150,
+                                                  150,
+                                                  100,
+                                                ],
+                                                "t": 76,
+                                              },
+                                              Object {
+                                                "s": Array [
+                                                  210,
+                                                  210,
+                                                  100,
+                                                ],
+                                                "t": 123,
+                                              },
+                                            ],
+                                          },
+                                        },
+                                        "nm": "Shape Layer 1",
+                                        "op": 240,
+                                        "shapes": Array [
+                                          Object {
+                                            "bm": 0,
+                                            "cix": 2,
+                                            "hd": false,
+                                            "it": Array [
+                                              Object {
+                                                "d": 1,
+                                                "hd": false,
+                                                "mn": "ADBE Vector Shape - Ellipse",
+                                                "nm": "Ellipse Path 1",
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    236,
+                                                    236,
+                                                  ],
+                                                },
+                                                "ty": "el",
+                                              },
+                                              Object {
+                                                "bm": 0,
+                                                "c": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    1,
+                                                    1,
+                                                    1,
+                                                    1,
+                                                  ],
+                                                },
+                                                "hd": false,
+                                                "lc": 1,
+                                                "lj": 1,
+                                                "ml": 4,
+                                                "mn": "ADBE Vector Graphic - Stroke",
+                                                "nm": "Stroke 1",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 100,
+                                                },
+                                                "ty": "st",
+                                                "w": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 2,
+                                                },
+                                              },
+                                              Object {
+                                                "bm": 0,
+                                                "c": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": Array [
+                                                    0.783504889993,
+                                                    0.945098039216,
+                                                    0.880089314779,
+                                                    1,
+                                                  ],
+                                                },
+                                                "hd": false,
+                                                "mn": "ADBE Vector Graphic - Fill",
+                                                "nm": "Fill 1",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 100,
+                                                },
+                                                "r": 1,
+                                                "ty": "fl",
+                                              },
+                                              Object {
+                                                "a": Object {
+                                                  "a": 0,
+                                                  "ix": 1,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "nm": "Transform",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 7,
+                                                  "k": 100,
+                                                },
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    0,
+                                                    -3,
+                                                  ],
+                                                },
+                                                "r": Object {
+                                                  "a": 0,
+                                                  "ix": 6,
+                                                  "k": 0,
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    100,
+                                                    100,
+                                                  ],
+                                                },
+                                                "sa": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 0,
+                                                },
+                                                "sk": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 0,
+                                                },
+                                                "ty": "tr",
+                                              },
+                                            ],
+                                            "ix": 1,
+                                            "mn": "ADBE Vector Group",
+                                            "nm": "Ellipse 1",
+                                            "np": 3,
+                                            "ty": "gr",
+                                          },
+                                        ],
+                                        "sr": 1,
+                                        "st": 0,
+                                        "ty": 4,
+                                      },
+                                      Object {
+                                        "ao": 0,
+                                        "bm": 0,
+                                        "ddd": 0,
+                                        "hidden": 0,
+                                        "ind": 5,
+                                        "ip": 240,
+                                        "ks": Object {
+                                          "a": Object {
+                                            "a": 0,
+                                            "ix": 1,
+                                            "k": Array [
+                                              0,
+                                              0,
+                                              0,
+                                            ],
+                                          },
+                                          "o": Object {
+                                            "a": 0,
+                                            "ix": 11,
+                                            "k": 100,
+                                          },
+                                          "p": Object {
+                                            "a": 0,
+                                            "ix": 2,
+                                            "k": Array [
+                                              256,
+                                              256,
+                                              0,
+                                            ],
+                                          },
+                                          "r": Object {
+                                            "a": 0,
+                                            "ix": 10,
+                                            "k": 0,
+                                          },
+                                          "s": Object {
+                                            "a": 0,
+                                            "ix": 6,
+                                            "k": Array [
+                                              100,
+                                              100,
+                                              100,
+                                            ],
+                                          },
+                                        },
+                                        "nm": "BG",
+                                        "op": 240,
+                                        "shapes": Array [
+                                          Object {
+                                            "bm": 0,
+                                            "cix": 2,
+                                            "hd": false,
+                                            "it": Array [
+                                              Object {
+                                                "d": 1,
+                                                "hd": false,
+                                                "mn": "ADBE Vector Shape - Rect",
+                                                "nm": "Rectangle Path 1",
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "r": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 0,
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    554,
+                                                    556,
+                                                  ],
+                                                },
+                                                "ty": "rc",
+                                              },
+                                              Object {
+                                                "bm": 0,
+                                                "c": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": Array [
+                                                    1,
+                                                    1,
+                                                    1,
+                                                    1,
+                                                  ],
+                                                },
+                                                "hd": false,
+                                                "mn": "ADBE Vector Graphic - Fill",
+                                                "nm": "Fill 1",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 100,
+                                                },
+                                                "r": 1,
+                                                "ty": "fl",
+                                              },
+                                              Object {
+                                                "a": Object {
+                                                  "a": 0,
+                                                  "ix": 1,
+                                                  "k": Array [
+                                                    0,
+                                                    0,
+                                                  ],
+                                                },
+                                                "nm": "Transform",
+                                                "o": Object {
+                                                  "a": 0,
+                                                  "ix": 7,
+                                                  "k": 100,
+                                                },
+                                                "p": Object {
+                                                  "a": 0,
+                                                  "ix": 2,
+                                                  "k": Array [
+                                                    -1,
+                                                    6,
+                                                  ],
+                                                },
+                                                "r": Object {
+                                                  "a": 0,
+                                                  "ix": 6,
+                                                  "k": 0,
+                                                },
+                                                "s": Object {
+                                                  "a": 0,
+                                                  "ix": 3,
+                                                  "k": Array [
+                                                    100,
+                                                    100,
+                                                  ],
+                                                },
+                                                "sa": Object {
+                                                  "a": 0,
+                                                  "ix": 5,
+                                                  "k": 0,
+                                                },
+                                                "sk": Object {
+                                                  "a": 0,
+                                                  "ix": 4,
+                                                  "k": 0,
+                                                },
+                                                "ty": "tr",
+                                              },
+                                            ],
+                                            "ix": 1,
+                                            "mn": "ADBE Vector Group",
+                                            "nm": "Rectangle 1",
+                                            "np": 3,
+                                            "ty": "gr",
+                                          },
+                                        ],
+                                        "sr": 1,
+                                        "st": 0,
+                                        "ty": 4,
+                                      },
+                                    ],
+                                    "markers": Array [],
+                                    "meta": Object {
+                                      "a": "",
+                                      "d": "",
+                                      "g": "LottieFiles AE 1.0.0",
+                                      "k": "",
+                                      "tc": "",
+                                    },
+                                    "nm": "HDFC Success",
+                                    "op": 130,
+                                    "v": "4.8.0",
+                                    "w": 512,
+                                  }
+                                }
+                                audioFactory={null}
+                                direction={1}
+                                goTo={null}
+                                loop={false}
+                                onComplete={[Function]}
+                                onEnterFrame={[Function]}
+                                onLoad={[Function]}
+                                onLoopComplete={[Function]}
+                                onSegmentStart={[Function]}
+                                path={null}
+                                play={true}
+                                renderer="svg"
+                                rendererSettings={
+                                  Object {
+                                    "preserveAspectRatio": "xMidYMid slice",
+                                  }
+                                }
+                                segments={null}
+                                speed={1}
+                                style={
+                                  Object {
+                                    "height": 200,
+                                    "margin": "auto",
+                                    "width": 200,
+                                  }
+                                }
+                              >
+                                <div
+                                  style={
+                                    Object {
+                                      "height": 200,
+                                      "margin": "auto",
+                                      "width": 200,
+                                    }
+                                  }
+                                />
+                              </Component>
+                            </LottieAnimation>
+                            <p>
+                              Thank you for your order! 
+                              <br />
+                              You will soon receive an email with all updates.
+                            </p>
+                          </div>
+                        </ModalBody>
+                        <ModalFooter>
+                          <div
+                            className="modal-footer"
+                          >
+                            <button
+                              onClick={[MockFunction]}
+                            >
+                              Got it!
+                            </button>
+                          </div>
+                        </ModalFooter>
+                      </div>
+                    </div>
+                  </ModalDialog>
+                </div>
+              </Transition>
+            </ForwardRef>
+          </Fade>
+        </DialogTransition>
+      </Portal>
+    </Modal>
+  </Modal>
+</AppModal>
+`;
+
+exports[`App Modal should render correctly 1`] = `
+<AppModal
+  onHide={[MockFunction]}
+  show={true}
+  type="default"
+>
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    className="appmodal"
+    dialogAs={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    enforceFocus={true}
+    keyboard={true}
+    onHide={[MockFunction]}
+    restoreFocus={true}
+    show={true}
+  >
+    <Modal
+      autoFocus={true}
+      backdrop={true}
+      backdropTransition={[Function]}
+      enforceFocus={true}
+      keyboard={true}
+      manager={
+        BootstrapModalManager {
+          "handleContainerOverflow": true,
+          "isRTL": false,
+          "modals": Array [
+            Object {
+              "add": [Function],
+              "backdrop": <div
+                class="fade modal-backdrop show"
+              />,
+              "dialog": <div
+                aria-modal="true"
+                class="fade appmodal modal show"
+                role="dialog"
+                style="display: block; padding-right: 0px;"
+                tabindex="-1"
+              >
+                <div
+                  class="modal-dialog"
+                >
+                  <div
+                    class="modal-content"
+                  >
+                    <div
+                      class="modal-header"
+                    >
+                      <div
+                        class="modal-title h4"
+                      />
+                      <button
+                        aria-label="Close"
+                        class="btn-close"
+                        type="button"
+                      />
+                    </div>
+                    <div
+                      class="modal-body"
+                    >
+                      <p />
+                    </div>
+                    <div
+                      class="modal-footer"
+                    >
+                      <button
+                        variant="secondary"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+              "isTopModal": [Function],
+              "remove": [Function],
+              "setBackdropRef": [Function],
+              "setDialogRef": [Function],
+            },
+          ],
+          "ownerDocument": undefined,
+          "state": Object {
+            "scrollBarWidth": 1024,
+            "style": Object {
+              "overflow": "",
+              "paddingRight": "",
+            },
+          },
+        }
+      }
+      onEnter={[Function]}
+      onEntering={[Function]}
+      onEscapeKeyDown={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onHide={[MockFunction]}
+      renderBackdrop={[Function]}
+      renderDialog={[Function]}
+      restoreFocus={true}
+      show={true}
+      transition={[Function]}
+    >
+      <Portal
+        containerInfo={
+          <body
+            class="modal-open"
+            data-rr-ui-modal-open=""
+            style="padding-right: 1024px;"
+          >
+            <div
+              class="fade modal-backdrop show"
+            />
+            <div
+              aria-modal="true"
+              class="fade appmodal modal show"
+              role="dialog"
+              style="display: block; padding-right: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="modal-dialog"
+              >
+                <div
+                  class="modal-content"
+                >
+                  <div
+                    class="modal-header"
+                  >
+                    <div
+                      class="modal-title h4"
+                    />
+                    <button
+                      aria-label="Close"
+                      class="btn-close"
+                      type="button"
+                    />
+                  </div>
+                  <div
+                    class="modal-body"
+                  >
+                    <p />
+                  </div>
+                  <div
+                    class="modal-footer"
+                  >
+                    <button
+                      variant="secondary"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        }
+      >
+        <BackdropTransition
+          appear={true}
+          in={true}
+        >
+          <Fade
+            appear={true}
+            in={true}
+            mountOnEnter={false}
+            timeout={null}
+            unmountOnExit={false}
+          >
+            <ForwardRef
+              addEndListener={[Function]}
+              appear={true}
+              childRef={[Function]}
+              in={true}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              timeout={null}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={true}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                nodeRef={
+                  Object {
+                    "current": <div
+                      class="fade modal-backdrop show"
+                    />,
+                  }
+                }
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={null}
+                unmountOnExit={false}
+              >
+                <div
+                  className="fade modal-backdrop show"
+                  onClick={[Function]}
+                />
+              </Transition>
+            </ForwardRef>
+          </Fade>
+        </BackdropTransition>
+        <DialogTransition
+          appear={true}
+          in={true}
+          onEnter={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          unmountOnExit={true}
+        >
+          <Fade
+            appear={true}
+            in={true}
+            mountOnEnter={false}
+            onEnter={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            timeout={null}
+            unmountOnExit={true}
+          >
+            <ForwardRef
+              addEndListener={[Function]}
+              appear={true}
+              childRef={[Function]}
+              in={true}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              timeout={null}
+              unmountOnExit={true}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={true}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                nodeRef={
+                  Object {
+                    "current": <div
+                      aria-modal="true"
+                      class="fade appmodal modal show"
+                      role="dialog"
+                      style="display: block; padding-right: 0px;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="modal-dialog"
+                      >
+                        <div
+                          class="modal-content"
+                        >
+                          <div
+                            class="modal-header"
+                          >
+                            <div
+                              class="modal-title h4"
+                            />
+                            <button
+                              aria-label="Close"
+                              class="btn-close"
+                              type="button"
+                            />
+                          </div>
+                          <div
+                            class="modal-body"
+                          >
+                            <p />
+                          </div>
+                          <div
+                            class="modal-footer"
+                          >
+                            <button
+                              variant="secondary"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>,
+                  }
+                }
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={null}
+                unmountOnExit={true}
+              >
+                <div
+                  aria-modal={true}
+                  className="fade appmodal modal show"
+                  onClick={[Function]}
+                  onMouseUp={[Function]}
+                  role="dialog"
+                  style={
+                    Object {
+                      "paddingLeft": undefined,
+                      "paddingRight": 0,
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <ModalDialog
+                    onMouseDown={[Function]}
+                  >
+                    <div
+                      className="modal-dialog"
+                      onMouseDown={[Function]}
+                    >
+                      <div
+                        className="modal-content"
+                      >
+                        <ModalHeader
+                          closeButton={true}
+                          closeLabel="Close"
+                        >
+                          <ForwardRef
+                            className="modal-header"
+                            closeButton={true}
+                            closeLabel="Close"
+                          >
+                            <div
+                              className="modal-header"
+                            >
+                              <ModalTitle>
+                                <ForwardRef
+                                  className="modal-title"
+                                >
+                                  <div
+                                    className="modal-title h4"
+                                  />
+                                </ForwardRef>
+                              </ModalTitle>
+                              <CloseButton
+                                aria-label="Close"
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-label="Close"
+                                  className="btn-close"
+                                  onClick={[Function]}
+                                  type="button"
+                                />
+                              </CloseButton>
+                            </div>
+                          </ForwardRef>
+                        </ModalHeader>
+                        <ModalBody>
+                          <div
+                            className="modal-body"
+                          >
+                            <p />
+                          </div>
+                        </ModalBody>
+                        <ModalFooter>
+                          <div
+                            className="modal-footer"
+                          >
+                            <button
+                              onClick={[MockFunction]}
+                              variant="secondary"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </ModalFooter>
+                      </div>
+                    </div>
+                  </ModalDialog>
+                </div>
+              </Transition>
+            </ForwardRef>
+          </Fade>
+        </DialogTransition>
+      </Portal>
+    </Modal>
+  </Modal>
+</AppModal>
+`;
