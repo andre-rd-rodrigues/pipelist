@@ -1,0 +1,73 @@
+@import "styles/colors";
+@import "styles/shapes";
+
+.person_modal {
+  & div[class="modal-header"],
+  div[class="modal-footer"] {
+    background-color: #f4f4f4;
+  }
+
+  //Header
+  & div[class="modal-header"] {
+    border-bottom: 1px solid #c4c6c887;
+    & h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      color: $dark;
+    }
+    & button[class="btn-close"] {
+      transform: scale(0.8);
+    }
+  }
+
+  //Title
+  & div[class="person_modal_title_details"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $light-grey;
+    padding: 1.5rem 0;
+    & div[id="app_avatar"] {
+      margin-bottom: 1.5rem;
+    }
+    & h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      &:last-child {
+        color: $green;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  //Details row
+  & div[class="person_modal_details"] {
+    padding: 1.7rem 0;
+    & div[class="person_modal_details_field"] {
+      & div[class="person_modal_details_field_label"] {
+        display: flex;
+        justify-content: flex-end;
+      }
+      & h5,
+      p {
+        font-size: 0.9rem;
+      }
+      & h5 {
+        font-weight: 600;
+        color: $grey;
+      }
+      & p {
+        font-weight: 400;
+        color: #c1c1c1;
+      }
+    }
+  }
+
+  //Footer
+  & div[class="modal-footer"] {
+    & button {
+      @include button;
+    }
+  }
+}
