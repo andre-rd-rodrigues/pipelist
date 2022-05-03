@@ -13,7 +13,8 @@
 }
 
 .listRow {
-  border: 0.1rem solid $light-grey;
+  border: 2px solid $light-grey;
+  border-radius: 3px;
   padding: 1rem 1.7rem;
   display: flex;
   justify-content: space-between;
