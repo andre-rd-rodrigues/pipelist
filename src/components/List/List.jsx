@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AppModal from "components/AppModal/AppModal";
-import ListRow from "./ListRow";
 import styles from "./list.module.scss";
+import ListRow from "./ListRow";
 
 const List = () => {
   const [personSelected, setPersonSelected] = useState(undefined);

@@ -1,8 +1,7 @@
 import React from "react";
 import OfficeIcon from "assets/icons/office_icon";
-import { Image } from "react-bootstrap";
-import styles from "./list.module.scss";
 import Avatar from "components/Avatar/Avatar";
+import styles from "./list.module.scss";
 
 const ListRow = ({ onPersonSelect }) => {
   const person = {

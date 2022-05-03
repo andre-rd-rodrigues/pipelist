@@ -1,5 +1,5 @@
-import Avatar from "components/Avatar/Avatar";
 import React from "react";
+import Avatar from "components/Avatar/Avatar";
 import { Col, Modal, Row } from "react-bootstrap";
 import styles from "./appmodal.module.scss";
 
