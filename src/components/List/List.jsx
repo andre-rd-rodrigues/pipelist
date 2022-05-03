@@ -17,7 +17,7 @@ const List = () => {
       <div className={styles.list}>
         <h1>{"People's"} List</h1>
         <hr />
-        <div className="mx-3">
+        <div id="list_section">
           <ListRow onPersonSelect={handleClickPerson} />
         </div>
       </div>

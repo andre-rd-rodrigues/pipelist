@@ -1,5 +1,10 @@
-@import "./colors";
+//Colors
+$dark: #26292c;
+$grey: #979797;
+$light-grey: #ececec;
+$green: #85e294;
 
+//Shapes
 @mixin button {
   background-color: white;
   border: 1px solid #b0b0b0;
@@ -13,3 +18,9 @@
     background-color: hsla(0, 0%, 100%, 0.5);
   }
 }
+
+//Sizes
+$breaking-point-lg: 1400px;
+$breaking-point-md: 990px;
+$breaking-point-sm: 414px;
+$breaking-point-xs: 330px;

@@ -33,38 +33,13 @@ const AppModal = (props) => {
             <div className="person_modal_details">
               <div className="person_modal_details_field">
                 <Row className="align-items-baseline justify-content-center">
-                  <Col
-                    sm={personResponsiveValues.label}
-                    md={personResponsiveValues.label}
-                    lg={personResponsiveValues.label}
-                  >
+                  <Col sm={4} md={4} lg={personResponsiveValues.label}>
                     <div className="person_modal_details_field_label">
                       <h5>Email</h5>
                     </div>
                   </Col>
-                  <Col
-                    sm={personResponsiveValues.description}
-                    md={personResponsiveValues.description}
-                    lg={personResponsiveValues.description}
-                  >
+                  <Col sm={8} md={8} lg={personResponsiveValues.description}>
                     <p>{person?.cc_email}</p>
-                  </Col>
-                </Row>
-                <Row className="align-items-baseline justify-content-center">
-                  <Col
-                    sm={personResponsiveValues.label}
-                    md={personResponsiveValues.label}
-                    lg={personResponsiveValues.label}
-                    className="d-flex justify-content-end"
-                  >
-                    <h5>Organization</h5>
-                  </Col>
-                  <Col
-                    sm={personResponsiveValues.description}
-                    md={personResponsiveValues.description}
-                    lg={personResponsiveValues.description}
-                  >
-                    <p>{person?.org_name}</p>
                   </Col>
                 </Row>
               </div>

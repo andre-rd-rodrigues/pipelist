@@ -1,5 +1,4 @@
-@import "styles/colors";
-@import "styles/sizes";
+@import "styles/mixins";
 
 .list {
   padding: 0.8rem 1.7rem;
@@ -9,6 +8,9 @@
   }
   & hr {
     color: $grey;
+  }
+  & div[id="list_section"] {
+    margin: 0 1rem;
   }
 }
 
