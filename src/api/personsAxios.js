@@ -1,7 +1,11 @@
 import axios from "axios";
 import { baseURL } from "./baseURL";
 
-export default axios.create({
+const personsAxios = axios.create({
   baseURL,
-  headers: { Accept: "application/json" }
+  params: {
+    api_token: process.env.REACT_APP_API_KEY
+  }
 });
+
+export default personsAxios;
