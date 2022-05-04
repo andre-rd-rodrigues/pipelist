@@ -4,7 +4,7 @@ import Avatar from "components/Avatar/Avatar";
 import { personPictureRender } from "utils/globalUtils";
 import styles from "./list.module.scss";
 
-const ListRow = ({ onPersonSelect, person }) => {
+const ListRow = ({ onPersonSelect, person, provided }) => {
   const onRowClicked = () => {
     onPersonSelect(person);
   };
@@ -15,6 +15,9 @@ const ListRow = ({ onPersonSelect, person }) => {
       onClick={onRowClicked}
       onKeyPress={onRowClicked}
       tabIndex={0}
+      ref={provided.innerRef}
+      {...provided.draggableProps}
+      {...provided.dragHandleProps}
     >
       <div>
         <h4>{`${person?.first_name} ${person?.last_name}`}</h4>

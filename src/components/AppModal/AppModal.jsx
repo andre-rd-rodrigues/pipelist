@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "components/Avatar/Avatar";
 import ListModalDetails from "components/List/ListModalDetails";
-import { Col, Modal, Row } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import { personPictureRender } from "utils/globalUtils";
 import styles from "./appmodal.module.scss";
 

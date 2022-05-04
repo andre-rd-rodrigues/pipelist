@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "api/personsAxios";
+import DraggableList from "components/AppDraggable/AppDraggable";
 import AppModal from "components/AppModal/AppModal";
 import styles from "./list.module.scss";
-import ListRow from "./ListRow";
 
 const List = () => {
   const [list, setList] = useState(undefined);
@@ -11,7 +11,7 @@ const List = () => {
   const [loading, setLoading] = useState(false);
 
   //Actions
-  const handleClickPerson = (person) => {
+  const handleSelectedPerson = (person) => {
     setPersonSelected(person);
     setModal(true);
   };
@@ -44,13 +44,12 @@ const List = () => {
         <h1>{"People's"} List</h1>
         <hr />
         <div id="list_section">
-          {list?.map((person) => (
-            <ListRow
-              key={person.id}
-              onPersonSelect={handleClickPerson}
-              person={person}
-            />
-          ))}
+          <DraggableList
+            key={list}
+            list={list}
+            setList={(newOrderedList) => setList(newOrderedList)}
+            onPersonSelect={handleSelectedPerson}
+          />
         </div>
       </div>
       <AppModal
