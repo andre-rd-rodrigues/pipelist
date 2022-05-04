@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "api/personsAxios";
-import DraggableList from "components/AppDraggable/AppDraggable";
-import AppModal from "components/AppModal/AppModal";
+import Modal from "components/AppModal/AppModal";
+import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
 
 const List = () => {
@@ -52,7 +52,7 @@ const List = () => {
           />
         </div>
       </div>
-      <AppModal
+      <Modal
         show={modal}
         onHide={() => setModal(false)}
         type="person"
