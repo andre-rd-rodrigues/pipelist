@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import axios from "api/personsAxios";
 import AppModal from "components/AppModal/AppModal";
 import styles from "./list.module.scss";
 import ListRow from "./ListRow";
-import axios from "api/personsAxios";
 
 const List = () => {
   const [list, setList] = useState(undefined);
@@ -23,7 +23,7 @@ const List = () => {
       .get(`/persons`)
       .then((res) => {
         const { data } = res;
-        return setList(data);
+        return setList(data.data);
       })
       .catch((err) => {
         /* Notification(
@@ -44,7 +44,13 @@ const List = () => {
         <h1>{"People's"} List</h1>
         <hr />
         <div id="list_section">
-          <ListRow onPersonSelect={handleClickPerson} />
+          {list?.map((person) => (
+            <ListRow
+              key={person.id}
+              onPersonSelect={handleClickPerson}
+              person={person}
+            />
+          ))}
         </div>
       </div>
       <AppModal

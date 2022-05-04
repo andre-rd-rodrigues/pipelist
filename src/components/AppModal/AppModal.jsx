@@ -1,12 +1,12 @@
 import React from "react";
 import Avatar from "components/Avatar/Avatar";
+import ListModalDetails from "components/List/ListModalDetails";
 import { Col, Modal, Row } from "react-bootstrap";
+import { personPictureRender } from "utils/globalUtils";
 import styles from "./appmodal.module.scss";
 
 const AppModal = (props) => {
   const { show = false, onHide, type = "default", person } = props;
-
-  const personResponsiveValues = { label: 4, description: 8 };
 
   switch (type) {
     case "person":
@@ -26,22 +26,37 @@ const AppModal = (props) => {
           </Modal.Header>
           <Modal.Body>
             <div className="person_modal_title_details">
-              <Avatar src={person?.imageSrc} alt="Pipelist avatar" size={6} />
-              <h4>{person?.name}</h4>
-              <h4>{person?.phone?.value}</h4>
+              <Avatar
+                src={personPictureRender(person?.picture_id?.pictures[128])}
+                alt="Pipelist avatar"
+                size={6}
+              />
+              <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
+              <h4>+ {person?.phone?.[0].value}</h4>
             </div>
             <div className="person_modal_details">
               <div className="person_modal_details_field">
-                <Row className="align-items-baseline justify-content-center">
-                  <Col sm={4} md={4} lg={personResponsiveValues.label}>
-                    <div className="person_modal_details_field_label">
-                      <h5>Email</h5>
-                    </div>
-                  </Col>
-                  <Col sm={8} md={8} lg={personResponsiveValues.description}>
-                    <p>{person?.cc_email}</p>
-                  </Col>
-                </Row>
+                <ListModalDetails
+                  label="Email"
+                  value={person?.email?.[0].value}
+                />
+                <ListModalDetails
+                  label="Organization"
+                  value={person?.org_name}
+                />
+                <ListModalDetails
+                  label="Assistant"
+                  value={person?.["7ab9173fa54626355c24ae76c7487743aad362ae"]}
+                />
+                <ListModalDetails
+                  label="Groups"
+                  value={person?.f7cf8b3ea06ed72293f69d25fd6406079b1cedfe}
+                />
+
+                <ListModalDetails
+                  label="Location"
+                  value={person?.org_id?.address}
+                />
               </div>
             </div>
           </Modal.Body>

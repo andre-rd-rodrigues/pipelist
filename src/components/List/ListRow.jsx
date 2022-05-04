@@ -1,21 +1,10 @@
 import React from "react";
 import OfficeIcon from "assets/icons/office_icon";
 import Avatar from "components/Avatar/Avatar";
+import { personPictureRender } from "utils/globalUtils";
 import styles from "./list.module.scss";
 
-const ListRow = ({ onPersonSelect }) => {
-  const person = {
-    name: "Ana Rita Sousa",
-    imageSrc:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    phone: { value: "+351 91 539 65" },
-    cc_email: "anaritasousa@company.com",
-    org_name: "Johson & Johnson",
-    Assistant: "Jessica Mourao",
-    Groups: "Women in Tech",
-    Location: "Porto, Portugal"
-  };
-
+const ListRow = ({ onPersonSelect, person }) => {
   const onRowClicked = () => {
     onPersonSelect(person);
   };
@@ -28,13 +17,16 @@ const ListRow = ({ onPersonSelect }) => {
       tabIndex={0}
     >
       <div>
-        <h4>Micheal Barton</h4>
+        <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
         <div className="list_row_person_address_div">
           <OfficeIcon />
-          <p>PerkinElmer Inc</p>
+          <p>{person?.org_name}</p>
         </div>
       </div>
-      <Avatar src={person.imageSrc} alt="Pipelist avatar" />
+      <Avatar
+        src={personPictureRender(person?.picture_id?.pictures[128])}
+        alt="Pipelist avatar"
+      />
     </div>
   );
 };
