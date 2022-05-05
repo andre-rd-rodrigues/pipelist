@@ -25,6 +25,7 @@ const AppModal = (props) => {
       setConfirmationModal(false);
       onOpenModal();
     } else {
+      setConfirmationModal(false);
       return onDeletePerson(person?.id);
     }
   };

@@ -4,6 +4,7 @@ import AppButton from "components/AppButton/AppButton";
 import Modal from "components/AppModal/AppModal";
 import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
+import Loading from "components/Loading/Loading";
 
 const List = () => {
   const [list, setList] = useState(undefined);
@@ -11,6 +12,7 @@ const List = () => {
   const [modalPerson, setModalPerson] = useState(false);
   const [modalAddPerson, setModalAddPerson] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [networkError, setNetworkError] = useState(false);
 
   //Actions
   const handleSelectedPerson = (person) => {
@@ -25,13 +27,11 @@ const List = () => {
       .get(`/persons`)
       .then((res) => {
         const { data } = res;
+        setLoading(false);
         return setList(data.data);
       })
       .catch((err) => {
-        /* Notification(
-          "Something went wrong... Please check your internet connection and try again.",
-          "error"
-        ); */
+        setNetworkError(true);
         return setLoading(false);
       });
   };
@@ -44,16 +44,17 @@ const List = () => {
         return console.log(data);
       })
       .catch((err) => {
+        setNetworkError(true);
         return console.log(err);
       });
   };
 
   const deletePerson = async (id) => {
+    setLoading(true);
     return await axios
       .delete(`/persons/${id}`)
       .then((res) => {
-        const { data } = res;
-        return console.log(data);
+        return window.location.reload();
       })
       .catch((err) => {
         return console.log(err);
@@ -74,7 +75,6 @@ const List = () => {
     };
     return postNewPerson(newPerson);
   };
-
   //Lifecycle
   useEffect(() => {
     getListOfPeople();
@@ -85,21 +85,28 @@ const List = () => {
         <h1>{"People's"} List</h1>
         <hr />
         <div id="list_section">
-          <div className="list_add_person">
-            <AppButton
-              onClick={() => setModalAddPerson(true)}
-              label="Add Person"
-              color="green"
-            />
-          </div>
-          <DraggableList
-            key={list}
-            list={list}
-            setList={(newOrderedList) => setList(newOrderedList)}
-            onPersonSelect={handleSelectedPerson}
-          />
+          {!networkError ? (
+            <>
+              <div className="list_add_person">
+                <AppButton
+                  onClick={() => setModalAddPerson(true)}
+                  label="Add Person"
+                  color="green"
+                />
+              </div>
+              <DraggableList
+                key={list}
+                list={list}
+                setList={(newOrderedList) => setList(newOrderedList)}
+                onPersonSelect={handleSelectedPerson}
+              />
+            </>
+          ) : (
+            <h5>Error in network</h5>
+          )}
         </div>
       </div>
+      {loading && <Loading loading={loading} />}
       <Modal
         show={modalPerson}
         onHide={() => setModalPerson(false)}
