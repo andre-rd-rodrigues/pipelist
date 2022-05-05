@@ -27,20 +27,20 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
             {list?.map((person, index) => (
               <Draggable key={person.id} draggableId={person.id} index={index}>
                 {(provided) => (
-                  <h1
+                  /*   <h1
                     ref={provided.innerRef}
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     style={getItemStyle(provided.draggableProps.style)}
                   >
                     Hey
-                  </h1>
-                  /*  <ListRow
+                  </h1> */
+                  <ListRow
                     provided={provided}
                     onPersonSelect={onPersonSelect}
                     person={person}
                     style={getItemStyle(provided.draggableProps.style)}
-                  /> */
+                  />
                 )}
               </Draggable>
             ))}

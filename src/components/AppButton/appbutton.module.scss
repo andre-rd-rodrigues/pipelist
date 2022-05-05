@@ -1,0 +1,6 @@
+@import "styles/mixins";
+
+.appButton {
+  @include button($green, white);
+  padding: 0.5rem 1.2rem;
+}

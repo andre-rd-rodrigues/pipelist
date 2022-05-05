@@ -1,47 +1,50 @@
 @import "styles/mixins";
 
+//Global Settings
+
+div[class="modal-header"],
+div[class="modal-footer"] {
+  background-color: #f4f4f4;
+}
+
+div[class="modal-header"] {
+  border-bottom: 1px solid #c4c6c887;
+  & h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: $dark;
+  }
+}
+
+//Back button
+button[class="btn-close"] {
+  transform: scale(0.8);
+}
+
+//Name, phone
+div[class="person_modal_title_details"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $light-grey;
+  padding: 1.5rem 0;
+  & div[id="app_avatar"] {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .person_modal {
-  & div[class="modal-header"],
-  div[class="modal-footer"] {
-    background-color: #f4f4f4;
-  }
+  //Name
+  & h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
 
-  //Header
-  & div[class="modal-header"] {
-    border-bottom: 1px solid #c4c6c887;
-    & h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0;
-      color: $dark;
-    }
-    & button[class="btn-close"] {
-      transform: scale(0.8);
-    }
-  }
-
-  //Name, phone
-  & div[class="person_modal_title_details"] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid $light-grey;
-    padding: 1.5rem 0;
-    & div[id="app_avatar"] {
-      margin-bottom: 1.5rem;
-    }
-
-    //Name
-    & h4 {
-      font-size: 1.2rem;
-      font-weight: 600;
-
-      //Phone
-      &:last-child {
-        color: $green;
-        margin-bottom: 0.5rem;
-        font-size: 1.1rem;
-      }
+    //Phone
+    &:last-child {
+      color: $light-green;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -66,13 +69,10 @@
       color: #c1c1c1;
     }
   }
+}
 
-  //Footer
-  & div[class="modal-footer"] {
-    & button {
-      @include button;
-    }
-  }
+.backdrop {
+  background-color: red;
 }
 
 //Responsive
