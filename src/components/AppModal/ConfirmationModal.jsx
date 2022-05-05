@@ -5,9 +5,14 @@ import styles from "./appmodal.module.scss";
 
 const ConfirmationModal = (props) => {
   const { title, message, onHide } = props;
-
   return (
-    <Modal {...props} show={props.show} onHide={onHide} centered>
+    <Modal
+      {...props}
+      show={props.show}
+      onHide={onHide}
+      centered
+      className={styles.confirmation}
+    >
       <Modal.Header>
         <Modal.Title>
           <h3>{title}</h3>

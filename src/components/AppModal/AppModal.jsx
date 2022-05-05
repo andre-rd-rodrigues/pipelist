@@ -85,6 +85,7 @@ const AppModal = (props) => {
             <Modal.Footer>
               <Button
                 label="Delete"
+                color="red"
                 onClick={() => {
                   onHide();
                   setConfirmationModal(true);
@@ -95,7 +96,7 @@ const AppModal = (props) => {
           </Modal>
           <ConfirmationModal
             title="Delete person"
-            message="This action is permant, are you sure you want to procced?"
+            message="This action will permantly erase this profile, are you sure you want to procced?"
             show={confirmationModal}
             onHide={handleConfirmationModalHide}
             backdrop="static"

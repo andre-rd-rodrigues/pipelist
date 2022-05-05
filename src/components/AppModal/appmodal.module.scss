@@ -71,8 +71,10 @@ div[class="person_modal_title_details"] {
   }
 }
 
-.backdrop {
-  background-color: red;
+.confirmation {
+  & div[class="modal-footer"] {
+    justify-content: space-between;
+  }
 }
 
 //Responsive
