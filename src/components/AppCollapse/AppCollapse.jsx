@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./appcollapse.module.scss";
 
 function AppCollapse({ children }) {
-  const [label, setLabel] = useState("See more");
+  const [label, setLabel] = useState("More info");
 
   return (
     <div className={styles.collapse}>

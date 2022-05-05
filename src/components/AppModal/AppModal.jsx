@@ -6,6 +6,7 @@ import ListModalDetails from "components/List/ListModalDetails";
 import { Form, Modal, Row, Col } from "react-bootstrap";
 import styles from "./appmodal.module.scss";
 import ConfirmationModal from "./ConfirmationModal";
+import { data_fields } from "utils/configs";
 
 const AppModal = (props) => {
   const {
@@ -18,6 +19,10 @@ const AppModal = (props) => {
     onOpenModal
   } = props;
   const [confirmationModal, setConfirmationModal] = useState(false);
+
+  const emptyField = "Unknown";
+
+  const { assistant, location, groups } = data_fields;
 
   //Actions
   const handleConfirmationModalHide = (responseType) => {
@@ -60,29 +65,33 @@ const AppModal = (props) => {
                   size={6}
                 />
                 <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
-                <h4>+ {person?.phone?.[0].value}</h4>
+                <h4>
+                  {person?.phone?.[0].value
+                    ? `+ ${person?.phone?.[0].value}`
+                    : emptyField}
+                </h4>
               </div>
               <div className="person_modal_details">
                 <div className="person_modal_details_field">
                   <ListModalDetails
                     label="Email"
-                    value={person?.email?.[0].value}
+                    value={person?.email?.[0].value || emptyField}
                   />
                   <ListModalDetails
                     label="Organization"
-                    value={person?.org_name}
+                    value={person?.org_name || emptyField}
                   />
                   <ListModalDetails
                     label="Assistant"
-                    value={person?.["7ab9173fa54626355c24ae76c7487743aad362ae"]}
+                    value={person?.[assistant] || emptyField}
                   />
                   <ListModalDetails
                     label="Groups"
-                    value={person?.f7cf8b3ea06ed72293f69d25fd6406079b1cedfe}
+                    value={person?.[groups] || emptyField}
                   />
                   <ListModalDetails
                     label="Location"
-                    value={person?.org_id?.address}
+                    value={person?.org_id?.address || emptyField}
                   />
                 </div>
               </div>

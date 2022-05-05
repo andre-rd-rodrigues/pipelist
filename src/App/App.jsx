@@ -9,7 +9,7 @@ function App() {
     <div id={styles.app}>
       <Navbar />
       <List />
-      <ToastContainer autoClose={2300} progressClassName="progressBar" />
+      <ToastContainer autoClose={1300} progressClassName="progressBar" />
     </div>
   );
 }

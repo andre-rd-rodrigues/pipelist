@@ -22,7 +22,7 @@ const ListRow = ({ onPersonSelect, person, provided }) => {
         <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
         <div className="list_row_person_address_div">
           <OfficeIcon />
-          <p>{person?.org_name}</p>
+          <p>{person?.org_name || "unkown"}</p>
         </div>
       </div>
       <Avatar src={person?.picture_id?.pictures[128]} alt="Pipelist avatar" />

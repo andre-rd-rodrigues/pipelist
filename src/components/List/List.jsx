@@ -7,7 +7,7 @@ import styles from "./list.module.scss";
 import Loading from "components/Loading/Loading";
 import ErrorPage from "components/ErrorPage/ErrorPage";
 import AppToast from "components/AppToast";
-
+import { data_fields } from "utils/configs";
 const List = () => {
   const [list, setList] = useState(undefined);
   const [personSelected, setPersonSelected] = useState(undefined);
@@ -25,14 +25,14 @@ const List = () => {
     AppToast(message, type);
     return setTimeout(() => {
       window.location.reload();
-    }, 3000);
+    }, 1800);
   };
 
   //Http
   const getListOfPeople = async () => {
     setLoading(true);
     await axios
-      .get(`/persons`)
+      .get(`/persons?limit=200`)
       .then((res) => {
         const { data } = res;
         setLoading(false);
@@ -49,14 +49,11 @@ const List = () => {
       .post(`/persons`, newPerson)
       .then((res) => {
         const { data } = res;
-        notificationReload("Added person succefully!", "success");
-        return console.log(data);
+        setModalAddPerson(false);
+        return notificationReload("Added person succefully!", "success");
       })
       .catch(() => {
-        notificationReload(
-          "Operation canceled. Please try again later.",
-          "error"
-        );
+        AppToast("Operation canceled. Please try again later.", "error");
         return setLoading(false);
       });
   };
@@ -68,10 +65,7 @@ const List = () => {
         return notificationReload("Person deleted successfully!", "success");
       })
       .catch(() => {
-        return notificationReload(
-          "Operation canceled. Please try again later.",
-          "error"
-        );
+        return AppToast("Operation canceled. Please try again later.", "error");
       });
   };
 
@@ -82,12 +76,17 @@ const List = () => {
 
     let form = e.target.elements;
 
+    const { assistant, location, groups } = data_fields;
+
     const newPerson = {
       name: `${form.firstName.value} ${form.lastName.value}`,
       email: [{ value: form.email.value, primary: true, label: "work" }],
-      phone: [{ value: form.phone.value, primary: true, label: "work" }]
-      /* org_name: form.organization.value */
+      phone: [{ value: form.phone.value, primary: true, label: "work" }],
+      [assistant]: form.assistant.value,
+      [groups]: form.groups.value
+      /*       org_id: 217 */
     };
+
     return postNewPerson(newPerson);
   };
   //Lifecycle
