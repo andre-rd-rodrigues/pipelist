@@ -1,7 +1,6 @@
 import React from "react";
 import OfficeIcon from "assets/icons/office_icon";
 import Avatar from "components/Avatar/Avatar";
-import { personPictureRender } from "utils/globalUtils";
 import styles from "./list.module.scss";
 
 const ListRow = ({ onPersonSelect, person, provided }) => {
@@ -26,10 +25,7 @@ const ListRow = ({ onPersonSelect, person, provided }) => {
           <p>{person?.org_name}</p>
         </div>
       </div>
-      <Avatar
-        src={personPictureRender(person?.picture_id?.pictures[128])}
-        alt="Pipelist avatar"
-      />
+      <Avatar src={person?.picture_id?.pictures[128]} alt="Pipelist avatar" />
     </div>
   );
 };

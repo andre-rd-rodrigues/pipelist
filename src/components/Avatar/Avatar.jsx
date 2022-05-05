@@ -9,7 +9,9 @@ const Avatar = ({ src, size = 4 }) => {
       style={{
         width: `${size}rem`,
         height: `${size}rem`,
-        backgroundImage: `url(${src})`
+        backgroundImage: `url(${
+          src || process.env.PUBLIC_URL + "/images/avatar.png"
+        })`
       }}
     ></div>
   );

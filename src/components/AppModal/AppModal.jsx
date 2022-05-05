@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "components/AppButton/AppButton";
 import AppCollapse from "components/AppCollapse/AppCollapse";
 import Avatar from "components/Avatar/Avatar";
 import ListModalDetails from "components/List/ListModalDetails";
 import { Form, Modal, Row, Col } from "react-bootstrap";
-import { personPictureRender } from "utils/globalUtils";
 import styles from "./appmodal.module.scss";
 import ConfirmationModal from "./ConfirmationModal";
 
@@ -30,6 +29,11 @@ const AppModal = (props) => {
     }
   };
 
+  useEffect(() => {
+    if (show) return (document.body.style.overflow = "hidden");
+    return (document.body.style.overflow = "unset");
+  }, [show]);
+
   //Modal type
   switch (type) {
     case "person":
@@ -50,7 +54,7 @@ const AppModal = (props) => {
             <Modal.Body>
               <div className="person_modal_title_details">
                 <Avatar
-                  src={personPictureRender(person?.picture_id?.pictures[128])}
+                  src={person?.picture_id?.pictures[128]}
                   alt="Pipelist avatar"
                   size={6}
                 />
@@ -122,7 +126,7 @@ const AppModal = (props) => {
           <Modal.Body>
             <div className="person_modal_title_details">
               <Avatar
-                src={personPictureRender(person?.picture_id?.pictures[128])}
+                src={person?.picture_id?.pictures[128]}
                 alt="Pipelist avatar"
                 size={6}
               />
