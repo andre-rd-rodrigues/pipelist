@@ -1,5 +1,6 @@
 import List from "components/List/List";
 import Navbar from "components/Navbar/Navbar";
+import { ToastContainer } from "react-toastify";
 import styles from "./app.module.scss";
 import "styles/global.scss";
 
@@ -8,6 +9,7 @@ function App() {
     <div id={styles.app}>
       <Navbar />
       <List />
+      <ToastContainer autoClose={2300} progressClassName="progressBar" />
     </div>
   );
 }

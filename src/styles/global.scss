@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import "./mixins";
 
 body {
   font-family: "Open Sans", sans-serif !important;
@@ -14,4 +15,36 @@ body {
   p {
     font-weight: 400;
   }
+}
+
+//TOASTS
+.Toastify__toast-body {
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  color: white;
+  & path {
+    color: white;
+  }
+  & p {
+    margin: 0;
+  }
+}
+.Toastify__toast--success {
+  background: #42a285 !important;
+}
+.Toastify__toast--error {
+  background: #e17575 !important;
+}
+.Toastify__toast--warning {
+  background: $blue !important;
+}
+
+.Toastify__toast-icon {
+  & svg {
+    fill: white;
+  }
+}
+.progressBar {
+  background-color: white !important;
 }
