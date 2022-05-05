@@ -11,6 +11,13 @@
   }
   & div[id="list_section"] {
     margin: 0 1rem;
+    & div[class="list_add_person"] {
+      text-align: right;
+      margin: 1.5rem 0 2rem 0;
+      & button {
+        padding: 0.5rem 1.2rem;
+      }
+    }
   }
 }
 
