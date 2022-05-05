@@ -6,6 +6,7 @@ import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
 import Loading from "components/Loading/Loading";
 import ErrorPage from "components/ErrorPage/ErrorPage";
+import AppToast from "components/AppToast";
 
 const List = () => {
   const [list, setList] = useState(undefined);
@@ -20,6 +21,12 @@ const List = () => {
     setPersonSelected(person);
     setModalPerson(true);
   };
+  const notificationReload = (message, type) => {
+    AppToast(message, type);
+    return setTimeout(() => {
+      window.location.reload();
+    }, 3000);
+  };
 
   //Http
   const getListOfPeople = async () => {
@@ -31,35 +38,40 @@ const List = () => {
         setLoading(false);
         return setList(data.data);
       })
-      .catch((err) => {
+      .catch(() => {
         setNetworkError(true);
         return setLoading(false);
       });
   };
   const postNewPerson = async (newPerson) => {
+    setLoading(true);
     return await axios
       .post(`/persons`, newPerson)
       .then((res) => {
         const { data } = res;
-
-        window.location.reload();
+        notificationReload("Added person succefully!", "success");
         return console.log(data);
       })
-      .catch((err) => {
-        setNetworkError(true);
-        return console.log(err);
+      .catch(() => {
+        notificationReload(
+          "Operation canceled. Please try again later.",
+          "error"
+        );
+        return setLoading(false);
       });
   };
-
   const deletePerson = async (id) => {
     setLoading(true);
     return await axios
       .delete(`/persons/${id}`)
-      .then((res) => {
-        return window.location.reload();
+      .then(() => {
+        return notificationReload("Person deleted successfully!", "success");
       })
-      .catch((err) => {
-        return console.log(err);
+      .catch(() => {
+        return notificationReload(
+          "Operation canceled. Please try again later.",
+          "error"
+        );
       });
   };
 
@@ -69,6 +81,7 @@ const List = () => {
     e.stopPropagation();
 
     let form = e.target.elements;
+
     const newPerson = {
       name: `${form.firstName.value} ${form.lastName.value}`,
       email: [{ value: form.email.value, primary: true, label: "work" }],

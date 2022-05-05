@@ -133,7 +133,7 @@ const AppModal = (props) => {
               />
             </div>
             <div>
-              <Form className="mt-5" onSubmit={onSubmit}>
+              <Form className="mt-4" onSubmit={onSubmit}>
                 <Row>
                   <Col>
                     <Form.Group className="mb-3" controlId="firstName">
@@ -191,7 +191,7 @@ const AppModal = (props) => {
                     <Form.Control type="text" placeholder="Location" />
                   </Form.Group>
                 </AppCollapse>
-                <div className="d-flex mt-5 mb-2 justify-content-between">
+                <div className="d-flex mt-3 mb-2 justify-content-between">
                   <Button label="Back" onClick={onHide} type="button" />
                   <Button label="Submit" color="green" type="submit" />
                 </div>
