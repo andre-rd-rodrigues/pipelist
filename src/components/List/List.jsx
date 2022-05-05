@@ -5,6 +5,7 @@ import Modal from "components/AppModal/AppModal";
 import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
 import Loading from "components/Loading/Loading";
+import ErrorPage from "components/ErrorPage/ErrorPage";
 
 const List = () => {
   const [list, setList] = useState(undefined);
@@ -41,6 +42,7 @@ const List = () => {
       .then((res) => {
         const { data } = res;
 
+        window.location.reload();
         return console.log(data);
       })
       .catch((err) => {
@@ -102,7 +104,7 @@ const List = () => {
               />
             </>
           ) : (
-            <h5>Error in network</h5>
+            <ErrorPage />
           )}
         </div>
       </div>
