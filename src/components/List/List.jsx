@@ -49,8 +49,7 @@ const List = () => {
     setLoading(true);
     return axios
       .post(`/persons`, newPerson)
-      .then((res) => {
-        const { data } = res;
+      .then(() => {
         setModalAddPerson(false);
         return notificationReload("Added person succefully!", "success");
       })
@@ -94,7 +93,7 @@ const List = () => {
 
     let form = e.target.elements;
 
-    const { assistant, location, groups } = data_fields;
+    const { assistant, groups } = data_fields;
 
     const newPerson = {
       name: `${form.firstName.value} ${form.lastName.value}`,

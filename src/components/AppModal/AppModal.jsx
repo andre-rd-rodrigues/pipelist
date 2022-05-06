@@ -22,7 +22,7 @@ const AppModal = (props) => {
 
   const emptyField = "Unknown";
 
-  const { assistant, location, groups } = data_fields;
+  const { assistant, groups } = data_fields;
 
   //Actions
   const handleConfirmationModalHide = (responseType) => {
