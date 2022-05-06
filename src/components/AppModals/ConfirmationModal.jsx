@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "components/AppButton/AppButton";
 import { Modal } from "react-bootstrap";
 import styles from "./appmodal.module.scss";
 
 const ConfirmationModal = (props) => {
-  const { title, message, onHide } = props;
+  const { title, message, onHide, show } = props;
+
+  //Lifecycle
+  useEffect(() => {
+    if (show) return (document.body.style.overflow = "hidden");
+    return (document.body.style.overflow = "unset");
+  }, [show]);
+
   return (
     <Modal
       {...props}

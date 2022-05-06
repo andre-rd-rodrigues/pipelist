@@ -6,12 +6,17 @@ const Loading = ({
   color = "rgb(54, 215, 183)",
   loading,
   size = 20,
-  type = "SyncLoader"
+  type = "SyncLoader",
+  styling
 }) => {
   switch (type) {
     case "SyncLoader":
       return (
-        <div className={styles.loader} data-testid="sync_loader">
+        <div
+          style={styling}
+          className={styles.loader}
+          data-testid="sync_loader"
+        >
           <SyncLoader color={color} loading={loading} size={size} />
         </div>
       );

@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "api/pipelistAxios";
 import AppButton from "components/AppButton/AppButton";
-import Modal from "components/AppModal/AppModal";
-import AppToast from "components/AppToast";
+import AddPersonModal from "components/AppModals/AddPersonModal";
+import PersonModal from "components/AppModals/PersonModal";
 import ErrorPage from "components/ErrorPage/ErrorPage";
-import Loading from "components/Loading/Loading";
+import Notification from "components/Notification/Notification";
+import { LoadingContext } from "context/loadingContext";
 import { data_fields } from "utils/configs";
+import { notificationReload } from "utils/globalUtils";
 import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
 
@@ -14,19 +16,14 @@ const List = () => {
   const [personSelected, setPersonSelected] = useState(undefined);
   const [modalPerson, setModalPerson] = useState(false);
   const [modalAddPerson, setModalAddPerson] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [networkError, setNetworkError] = useState(false);
+
+  const { setLoading } = useContext(LoadingContext);
 
   //Actions
   const handleSelectedPerson = (person) => {
     setPersonSelected(person);
     setModalPerson(true);
-  };
-  const notificationReload = (message, type) => {
-    AppToast(message, type);
-    return setTimeout(() => {
-      window.location.reload();
-    }, 1800);
   };
 
   //Http
@@ -54,7 +51,7 @@ const List = () => {
         return notificationReload("Added person succefully!", "success");
       })
       .catch(() => {
-        AppToast("Operation canceled. Please try again later.", "error");
+        Notification("Operation canceled. Please try again later.", "error");
         return setLoading(false);
       });
   };
@@ -67,7 +64,10 @@ const List = () => {
         return notificationReload("Person deleted successfully!", "success");
       })
       .catch(() => {
-        return AppToast("Operation canceled. Please try again later.", "error");
+        return Notification(
+          "Operation canceled. Please try again later.",
+          "error"
+        );
       });
   };
 
@@ -136,8 +136,7 @@ const List = () => {
           )}
         </div>
       </div>
-      {loading && <Loading loading={loading} />}
-      <Modal
+      <PersonModal
         show={modalPerson}
         onHide={() => setModalPerson(false)}
         onOpenModal={() => setModalPerson(true)}
@@ -145,7 +144,7 @@ const List = () => {
         person={personSelected}
         onDeletePerson={deletePerson}
       />
-      <Modal
+      <AddPersonModal
         show={modalAddPerson}
         onHide={() => setModalAddPerson(false)}
         type="add_person"

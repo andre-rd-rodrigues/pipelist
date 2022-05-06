@@ -1,7 +1,6 @@
 @import "styles/mixins";
 
 //Global Settings
-
 div[class="modal-header"],
 div[class="modal-footer"] {
   background-color: #f4f4f4;
@@ -16,12 +15,10 @@ div[class="modal-header"] {
   }
 }
 
-//Back button
 button[class="btn-close"] {
   transform: scale(0.8);
 }
 
-//Name, phone
 div[class="person_modal_title_details"] {
   display: flex;
   flex-direction: column;
@@ -34,7 +31,9 @@ div[class="person_modal_title_details"] {
   }
 }
 
+//Person Modal
 .person_modal {
+  z-index: 3 !important;
   //Name
   & h4 {
     font-size: 1.2rem;

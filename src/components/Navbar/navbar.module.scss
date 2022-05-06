@@ -3,6 +3,7 @@
 .navbar {
   background-color: #26292c;
   padding: 0.8rem;
+  z-index: 3 !important;
   & img {
     max-width: 10rem;
   }
