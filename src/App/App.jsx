@@ -5,7 +5,7 @@ import styles from "./app.module.scss";
 import "styles/global.scss";
 import Loading from "components/Loading/Loading";
 import { useContext } from "react";
-import { LoadingContext } from "context/loadingContext";
+import { LoadingContext } from "context/loading-context";
 
 function App() {
   const { loading } = useContext(LoadingContext);

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import axios from "api/pipelistAxios";
 import Notification from "components/Notification/Notification";
-import { LoadingContext } from "context/loadingContext";
+import { LoadingContext } from "context/loading-context";
 import FeatherIcon from "feather-icons-react";
 import { notificationReload } from "utils/globalUtils";
 import styles from "./avatar.module.scss";

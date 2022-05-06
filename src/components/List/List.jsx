@@ -5,7 +5,7 @@ import AddPersonModal from "components/AppModals/AddPersonModal";
 import PersonModal from "components/AppModals/PersonModal";
 import ErrorPage from "components/ErrorPage/ErrorPage";
 import Notification from "components/Notification/Notification";
-import { LoadingContext } from "context/loadingContext";
+import { LoadingContext } from "context/loading-context";
 import { data_fields } from "utils/configs";
 import { notificationReload } from "utils/globalUtils";
 import DraggableList from "./DraggableList";
