@@ -1,11 +1,11 @@
+import { useContext } from "react";
 import List from "components/List/List";
+import Loading from "components/Loading/Loading";
 import Navbar from "components/Navbar/Navbar";
+import { LoadingContext } from "context/loading-context";
 import { ToastContainer } from "react-toastify";
 import styles from "./app.module.scss";
 import "styles/global.scss";
-import Loading from "components/Loading/Loading";
-import { useContext } from "react";
-import { LoadingContext } from "context/loading-context";
 
 function App() {
   const { loading } = useContext(LoadingContext);

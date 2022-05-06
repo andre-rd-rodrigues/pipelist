@@ -39,7 +39,7 @@ function PersonModal(props) {
               src={person?.picture_id?.pictures[128]}
               alt="Pipelist avatar"
               size={5.5}
-              editPicture={person?.id}
+              profileId={person?.id}
             />
             <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
             <h4>

@@ -3,10 +3,10 @@ import axios from "api/pipelistAxios";
 import Notification from "components/Notification/Notification";
 import { LoadingContext } from "context/loading-context";
 import FeatherIcon from "feather-icons-react";
-import { notificationReload } from "utils/globalUtils";
+import { notificationReload } from "utils/global-utils";
 import styles from "./avatar.module.scss";
 
-const Avatar = ({ src, size = 4, editPicture }) => {
+const Avatar = ({ src, size = 4, profileId }) => {
   const [uploadedPicture, setUploadedPicture] = useState(undefined);
   const { setLoading } = useContext(LoadingContext);
 
@@ -17,7 +17,7 @@ const Avatar = ({ src, size = 4, editPicture }) => {
     formData.append("file", uploadedFile);
 
     return axios
-      .post(`/persons/${editPicture}/picture`, formData, {
+      .post(`/persons/${profileId}/picture`, formData, {
         headers: {
           "Content-Type": "multipart/form-data"
         }
@@ -53,7 +53,7 @@ const Avatar = ({ src, size = 4, editPicture }) => {
         })`
       }}
     >
-      {editPicture && (
+      {profileId && (
         <div role="button">
           <FeatherIcon icon="camera" color="white" size={size * 6} />
           <input type="file" name="file" onChange={handleUpload} />

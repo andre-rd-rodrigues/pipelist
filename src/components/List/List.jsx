@@ -7,7 +7,7 @@ import ErrorPage from "components/ErrorPage/ErrorPage";
 import Notification from "components/Notification/Notification";
 import { LoadingContext } from "context/loading-context";
 import { data_fields } from "utils/configs";
-import { notificationReload } from "utils/globalUtils";
+import { notificationReload } from "utils/global-utils";
 import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
 

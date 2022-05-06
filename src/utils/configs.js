@@ -4,6 +4,7 @@ const data_fields = {
   assistant: "1102c3288d42c7ae3b1faf65a80a51521337af06"
 };
 
+//Content for empty fields
 const empty_field = "Unkown";
 
 export { data_fields, empty_field };

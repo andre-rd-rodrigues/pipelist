@@ -13,6 +13,7 @@ function AddPersonModal(props) {
     if (show) return (document.body.style.overflow = "hidden");
     return (document.body.style.overflow = "unset");
   }, [show]);
+
   return (
     <Modal
       size="lg"
