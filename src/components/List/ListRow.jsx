@@ -2,6 +2,7 @@ import React from "react";
 import OfficeIcon from "assets/icons/office_icon";
 import Avatar from "components/Avatar/Avatar";
 import styles from "./list.module.scss";
+import { empty_field } from "utils/configs";
 
 const ListRow = ({ onPersonSelect, person, provided }) => {
   const onRowClicked = () => {
@@ -22,7 +23,7 @@ const ListRow = ({ onPersonSelect, person, provided }) => {
         <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
         <div className="list_row_person_address_div">
           <OfficeIcon />
-          <p>{person?.org_name || "unkown"}</p>
+          <p>{person?.org_name || empty_field}</p>
         </div>
       </div>
       <Avatar src={person?.picture_id?.pictures[128]} alt="Pipelist avatar" />

@@ -1,5 +1,26 @@
+@import "styles/mixins";
+
 .avatar {
   background-size: cover;
   background-position: top center;
   border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    & div[role="button"] {
+      opacity: 1;
+    }
+  }
+
+  & div[role="button"] {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s ease;
+  }
 }

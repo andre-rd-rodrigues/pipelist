@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import FeatherIcon from "feather-icons-react";
 import styles from "./avatar.module.scss";
 
-const Avatar = ({ src, size = 4 }) => {
+const Avatar = ({ src, size = 4, editPicture }) => {
+  const [uploadedPicture, setUploadedPicture] = useState(undefined);
   return (
     <div
       className={styles.avatar}
@@ -10,10 +12,18 @@ const Avatar = ({ src, size = 4 }) => {
         width: `${size}rem`,
         height: `${size}rem`,
         backgroundImage: `url(${
-          src || process.env.PUBLIC_URL + "/images/avatar.png"
+          src ||
+          uploadedPicture ||
+          process.env.PUBLIC_URL + "/images/avatar.png"
         })`
       }}
-    ></div>
+    >
+      {editPicture && (
+        <div role="button" type="file" name="file">
+          <FeatherIcon icon="camera" color="white" size={size * 6} />
+        </div>
+      )}
+    </div>
   );
 };
 

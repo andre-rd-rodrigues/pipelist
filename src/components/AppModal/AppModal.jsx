@@ -4,7 +4,7 @@ import AppCollapse from "components/AppCollapse/AppCollapse";
 import Avatar from "components/Avatar/Avatar";
 import ListModalDetails from "components/List/ListModalDetails";
 import { Form, Modal, Row, Col } from "react-bootstrap";
-import { data_fields } from "utils/configs";
+import { data_fields, empty_field } from "utils/configs";
 import styles from "./appmodal.module.scss";
 import ConfirmationModal from "./ConfirmationModal";
 
@@ -20,21 +20,18 @@ const AppModal = (props) => {
   } = props;
   const [confirmationModal, setConfirmationModal] = useState(false);
 
-  const emptyField = "Unknown";
-
-  const { assistant, groups } = data_fields;
-
   //Actions
   const handleConfirmationModalHide = (responseType) => {
     if (responseType === "cancel") {
       setConfirmationModal(false);
-      onOpenModal();
+      return onOpenModal();
     } else {
       setConfirmationModal(false);
       return onDeletePerson(person?.id);
     }
   };
 
+  //Lifecycle
   useEffect(() => {
     if (show) return (document.body.style.overflow = "hidden");
     return (document.body.style.overflow = "unset");
@@ -62,36 +59,37 @@ const AppModal = (props) => {
                 <Avatar
                   src={person?.picture_id?.pictures[128]}
                   alt="Pipelist avatar"
-                  size={6}
+                  size={5.5}
+                  editPicture
                 />
                 <h4>{`${person?.first_name} ${person?.last_name}`}</h4>
                 <h4>
                   {person?.phone?.[0].value
                     ? `+ ${person?.phone?.[0].value}`
-                    : emptyField}
+                    : empty_field}
                 </h4>
               </div>
               <div className="person_modal_details">
                 <div className="person_modal_details_field">
                   <ListModalDetails
                     label="Email"
-                    value={person?.email?.[0].value || emptyField}
+                    value={person?.email?.[0].value || empty_field}
                   />
                   <ListModalDetails
                     label="Organization"
-                    value={person?.org_name || emptyField}
+                    value={person?.org_name || empty_field}
                   />
                   <ListModalDetails
                     label="Assistant"
-                    value={person?.[assistant] || emptyField}
+                    value={person?.[data_fields.assistant] || empty_field}
                   />
                   <ListModalDetails
                     label="Groups"
-                    value={person?.[groups] || emptyField}
+                    value={person?.[data_fields.groups] || empty_field}
                   />
                   <ListModalDetails
                     label="Location"
-                    value={person?.org_id?.address || emptyField}
+                    value={person?.org_id?.address || empty_field}
                   />
                 </div>
               </div>
