@@ -1,41 +1,31 @@
-import React, { useEffect, useState, useRef } from "react";
-import axios from "axios";
+import React, { useState } from "react";
+import axios from "api/pipelistAxios";
 import FeatherIcon from "feather-icons-react";
 import styles from "./avatar.module.scss";
 
 const Avatar = ({ src, size = 4, editPicture }) => {
-  const [uploadedFile, setUploadedFile] = useState(undefined);
   const [uploadedPicture, setUploadedPicture] = useState(undefined);
-  let inputFile = useRef();
 
-  const postPicture = async () => {
+  //Http
+  const postPicture = async (uploadedFile) => {
     let formData = new FormData();
-    formData.append("image", inputFile.current.input);
+    formData.append("file", uploadedFile);
 
     return axios
-      .post(
-        `/persons/${editPicture}/picture`,
-        {
-          file: formData
-        },
-        {
-          headers: {
-            "Content-Type": "multipart/form-data"
-          }
+      .post(`/persons/${editPicture}/picture`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data"
         }
-      )
-      .then(() => {
-        console.log("ok");
       })
+      .then(() => {})
       .catch(() => {
         return;
       });
   };
 
-  const handleChange = (e) => {
-    setUploadedFile(e.target.files[0]);
-    setUploadedPicture(URL.createObjectURL(e.target.files[0]));
-    return postPicture();
+  const handleUpload = (input) => {
+    setUploadedPicture(URL.createObjectURL(input.target.files[0]));
+    return postPicture(input.target.files[0]);
   };
 
   return (
@@ -55,12 +45,7 @@ const Avatar = ({ src, size = 4, editPicture }) => {
       {editPicture && (
         <div role="button">
           <FeatherIcon icon="camera" color="white" size={size * 6} />
-          <input
-            type="file"
-            name="file"
-            onChange={handleChange}
-            ref={inputFile}
-          />
+          <input type="file" name="file" onChange={handleUpload} />
         </div>
       )}
     </div>
