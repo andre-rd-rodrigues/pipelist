@@ -22,5 +22,12 @@
     align-items: center;
     opacity: 0;
     transition: 0.2s ease;
+    position: relative;
+  }
+  & input {
+    opacity: 0;
+    position: absolute;
+    padding-bottom: 3.5rem;
+    cursor: pointer;
   }
 }

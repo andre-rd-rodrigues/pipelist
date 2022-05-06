@@ -4,6 +4,12 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import { LoadingProvider } from "context/loadingContext";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <LoadingProvider>
+    <App />
+  </LoadingProvider>,
+  document.getElementById("root")
+);
 reportWebVitals();

@@ -32,6 +32,7 @@ function PersonModal(props) {
             <h3>Person Information</h3>
           </Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
           <div className="person_modal_title_details">
             <Avatar
