@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import axios from "api/personsAxios";
+import axios from "api/pipelistAxios";
 import AppButton from "components/AppButton/AppButton";
 import Modal from "components/AppModal/AppModal";
+import AppToast from "components/AppToast";
+import ErrorPage from "components/ErrorPage/ErrorPage";
+import Loading from "components/Loading/Loading";
+import { data_fields } from "utils/configs";
 import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
-import Loading from "components/Loading/Loading";
-import ErrorPage from "components/ErrorPage/ErrorPage";
-import AppToast from "components/AppToast";
-import { data_fields } from "utils/configs";
+
 const List = () => {
   const [list, setList] = useState(undefined);
   const [personSelected, setPersonSelected] = useState(undefined);
@@ -43,9 +44,10 @@ const List = () => {
         return setLoading(false);
       });
   };
+
   const postNewPerson = async (newPerson) => {
     setLoading(true);
-    return await axios
+    return axios
       .post(`/persons`, newPerson)
       .then((res) => {
         const { data } = res;
@@ -57,6 +59,7 @@ const List = () => {
         return setLoading(false);
       });
   };
+
   const deletePerson = async (id) => {
     setLoading(true);
     return await axios
@@ -66,6 +69,21 @@ const List = () => {
       })
       .catch(() => {
         return AppToast("Operation canceled. Please try again later.", "error");
+      });
+  };
+
+  const handlePostNewPerson = async (organizationName, newPerson) => {
+    //Get organization org_id by input name
+    await axios
+      .get(`/organizations/search?term=${organizationName}`)
+      .then((res) => {
+        const { data } = res.data;
+        if (data.items.length > 0)
+          return postNewPerson({ ...newPerson, org_id: data.items[0].item.id });
+        return postNewPerson(newPerson);
+      })
+      .catch(() => {
+        return postNewPerson(newPerson);
       });
   };
 
@@ -84,10 +102,9 @@ const List = () => {
       phone: [{ value: form.phone.value, primary: true, label: "work" }],
       [assistant]: form.assistant.value,
       [groups]: form.groups.value
-      /*       org_id: 217 */
     };
 
-    return postNewPerson(newPerson);
+    return handlePostNewPerson(form.organization.value, newPerson);
   };
   //Lifecycle
   useEffect(() => {

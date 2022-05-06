@@ -4,9 +4,9 @@ import AppCollapse from "components/AppCollapse/AppCollapse";
 import Avatar from "components/Avatar/Avatar";
 import ListModalDetails from "components/List/ListModalDetails";
 import { Form, Modal, Row, Col } from "react-bootstrap";
+import { data_fields } from "utils/configs";
 import styles from "./appmodal.module.scss";
 import ConfirmationModal from "./ConfirmationModal";
-import { data_fields } from "utils/configs";
 
 const AppModal = (props) => {
   const {
@@ -194,10 +194,6 @@ const AppModal = (props) => {
                   <Form.Group className="mb-3" controlId="groups">
                     <Form.Label>Groups</Form.Label>
                     <Form.Control type="text" placeholder="Groups" />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="location">
-                    <Form.Label>Location</Form.Label>
-                    <Form.Control type="text" placeholder="Location" />
                   </Form.Group>
                 </AppCollapse>
                 <div className="d-flex mt-3 mb-2 justify-content-between">
