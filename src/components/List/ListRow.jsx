@@ -1,8 +1,8 @@
 import React from "react";
 import OfficeIcon from "assets/icons/office_icon";
 import Avatar from "components/Avatar/Avatar";
-import styles from "./list.module.scss";
 import { empty_field } from "utils/configs";
+import styles from "./list.module.scss";
 
 const ListRow = ({ onPersonSelect, person, provided }) => {
   const onRowClicked = () => {
