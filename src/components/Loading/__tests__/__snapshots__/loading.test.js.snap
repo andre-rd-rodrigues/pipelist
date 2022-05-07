@@ -4,11 +4,6 @@ exports[`Loader should render correctly 1`] = `
 <div
   className="loader"
   data-testid="sync_loader"
-  style={
-    Object {
-      "height": 0,
-    }
-  }
 >
   <span
     className="css-1xdhyk6"

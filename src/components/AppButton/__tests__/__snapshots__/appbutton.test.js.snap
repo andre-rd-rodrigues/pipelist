@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App button renders correctly 1`] = `
+<button
+  className="appButton"
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.5)",
+      "border": "1px solid #b0b0b0",
+      "color": undefined,
+    }
+  }
+/>
+`;

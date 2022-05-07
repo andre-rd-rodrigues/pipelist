@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import ListRow from "components/List/ListRow";
 import { Droppable, DragDropContext, Draggable } from "react-beautiful-dnd";
 
@@ -19,6 +19,9 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
     margin: `0 0 ${8}px 0`,
     ...draggableStyle
   });
+
+  useRef();
+
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="list">
@@ -27,14 +30,6 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
             {list?.map((person, index) => (
               <Draggable key={person.id} draggableId={person.id} index={index}>
                 {(provided) => (
-                  /*   <h1
-                    ref={provided.innerRef}
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
-                    style={getItemStyle(provided.draggableProps.style)}
-                  >
-                    Hey
-                  </h1> */
                   <ListRow
                     provided={provided}
                     onPersonSelect={onPersonSelect}

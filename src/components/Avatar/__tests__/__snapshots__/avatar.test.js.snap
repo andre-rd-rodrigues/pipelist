@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders correctly 1`] = `
+<div
+  className="avatar"
+  id="app_avatar"
+  style={
+    Object {
+      "backgroundImage": "url(/images/avatar.png)",
+      "height": "4rem",
+      "width": "4rem",
+    }
+  }
+/>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error page renders correctly 1`] = `
+<div
+  className="errorPage"
+>
+  <img
+    alt="Pipelist - Network error"
+    src="/images/error.png"
+  />
+  <h2>
+    Something went wrong
+  </h2>
+  <p>
+    Please refresh the page and if the problem persists, contact our
+     
+    <a
+      href="https://support.pipedrive.com/contact-us"
+      rel="noreferrer"
+      target="_blank"
+    >
+      support team.
+    </a>
+  </p>
+  <button
+    className="appButton"
+    color="green"
+    label="Refresh"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": undefined,
+        "border": false,
+        "color": "white",
+      }
+    }
+  >
+    Refresh
+  </button>
+</div>
+`;

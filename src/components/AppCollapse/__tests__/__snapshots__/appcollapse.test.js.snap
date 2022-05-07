@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App collapse renders correctly 1`] = `
+<div
+  className="collapse"
+>
+  <button
+    aria-controls="appCollapse"
+    aria-expanded="false"
+    className="button"
+    data-bs-target="#appCollapse"
+    data-bs-toggle="collapse"
+    onClick={[Function]}
+    type="button"
+  >
+    See more
+  </button>
+  <div
+    className="collapse"
+    id="appCollapse"
+  />
+</div>
+`;
