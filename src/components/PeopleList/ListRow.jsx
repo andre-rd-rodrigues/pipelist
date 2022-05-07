@@ -5,6 +5,8 @@ import { empty_field } from "utils/configs";
 import styles from "./list.module.scss";
 
 const ListRow = ({ onPersonSelect, person, provided }) => {
+  const { innerRef, draggableProps, dragHandleProps } = provided;
+
   const onRowClicked = () => {
     onPersonSelect(person);
   };
@@ -15,9 +17,9 @@ const ListRow = ({ onPersonSelect, person, provided }) => {
       onClick={onRowClicked}
       onKeyPress={onRowClicked}
       tabIndex={0}
-      ref={provided.innerRef}
-      {...provided.draggableProps}
-      {...provided.dragHandleProps}
+      ref={innerRef}
+      {...draggableProps}
+      {...dragHandleProps}
     >
       <div>
         <h4>{`${person?.first_name} ${person?.last_name}`}</h4>

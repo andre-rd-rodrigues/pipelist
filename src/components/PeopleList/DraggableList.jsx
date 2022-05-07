@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import ListRow from "components/List/ListRow";
+import ListRow from "components/PeopleList/ListRow";
 import { Droppable, DragDropContext, Draggable } from "react-beautiful-dnd";
 
 const DraggableList = ({ list, setList, onPersonSelect }) => {
@@ -20,17 +20,20 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
     ...draggableStyle
   });
 
-  useRef();
-
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="list">
         {(provided) => (
           <div {...provided.droppableProps} ref={provided.innerRef}>
             {list?.map((person, index) => (
-              <Draggable key={person.id} draggableId={person.id} index={index}>
+              <Draggable
+                key={person.id}
+                draggableId={person?.id.toString()}
+                index={index}
+              >
                 {(provided) => (
                   <ListRow
+                    innerRef={provided.innerRef}
                     provided={provided}
                     onPersonSelect={onPersonSelect}
                     person={person}

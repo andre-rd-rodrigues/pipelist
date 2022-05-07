@@ -11,7 +11,7 @@ import { notificationReload } from "utils/global-utils";
 import DraggableList from "./DraggableList";
 import styles from "./list.module.scss";
 
-const List = () => {
+const PeopleList = () => {
   const [list, setList] = useState(undefined);
   const [personSelected, setPersonSelected] = useState(undefined);
   const [modalPerson, setModalPerson] = useState(false);
@@ -154,4 +154,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default PeopleList;

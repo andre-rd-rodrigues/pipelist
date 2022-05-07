@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "components/AppButton/AppButton";
 import Avatar from "components/Avatar/Avatar";
-import ListModalDetails from "components/List/ListModalDetails";
+import ListModalDetails from "components/PeopleList/ListModalDetails";
 import { Modal } from "react-bootstrap";
 import { data_fields, empty_field } from "utils/configs";
 import styles from "./appmodal.module.scss";

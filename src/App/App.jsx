@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import List from "components/List/List";
+import List from "components/PeopleList/PeopleList";
 import Loading from "components/Loading/Loading";
 import Navbar from "components/Navbar/Navbar";
 import { LoadingContext } from "context/loading-context";

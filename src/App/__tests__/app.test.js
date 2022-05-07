@@ -8,16 +8,16 @@ import { LoadingProvider } from "context/loading-context";
 import reactTestRenderer from "react-test-renderer";
 import App from "../App";
 
-let providerProps = {
-  loading: false,
-  setLoading: jest.fn()
-};
-
-const MockProvider = ({ children }) => (
-  <LoadingProvider value={providerProps}>{children}</LoadingProvider>
-);
-
 describe("App", () => {
+  let providerProps = {
+    loading: false,
+    setLoading: jest.fn()
+  };
+
+  const MockProvider = ({ children }) => (
+    <LoadingProvider value={providerProps}>{children}</LoadingProvider>
+  );
+
   // it("renders correctly", () => {
   //   const wrapper = reactTestRenderer.create(
   //     <MockProvider>
