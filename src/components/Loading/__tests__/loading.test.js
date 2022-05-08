@@ -20,12 +20,12 @@ describe("Loading", () => {
   it("should show loader when loading is true", () => {
     render(<Loading {...props} />);
 
-    expect(screen.getByTestId("sync_loader")).toBeInTheDocument();
+    expect(screen.getByTestId("loader")).toBeInTheDocument();
   });
 
   it("should not show loader when loading is false", () => {
     render(<Loading {...props} loading={false} />);
 
-    expect(screen.queryByTestId("sync_loader")).not.toBeInTheDocument();
+    expect(screen.queryByTestId("loader")).not.toBeInTheDocument();
   });
 });

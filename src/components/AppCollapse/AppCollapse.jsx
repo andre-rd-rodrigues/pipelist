@@ -5,7 +5,6 @@ function AppCollapse({ children }) {
   const initialLabel = "See more";
 
   const [label, setLabel] = useState(initialLabel);
-
   return (
     <div className={styles.collapse}>
       <button

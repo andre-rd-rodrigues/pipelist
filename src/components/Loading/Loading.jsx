@@ -1,5 +1,5 @@
 import React from "react";
-import SyncLoader from "react-spinners/SyncLoader";
+import { SyncLoader } from "react-spinners";
 import styles from "./loading.module.scss";
 
 const Loading = ({
@@ -9,22 +9,19 @@ const Loading = ({
   type = "SyncLoader",
   styling
 }) => {
-  switch (type) {
-    case "SyncLoader":
-      return (
-        loading && (
-          <div
-            style={styling}
-            className={styles.loader}
-            data-testid="sync_loader"
-          >
-            <SyncLoader color={color} loading={loading} size={size} />
-          </div>
-        )
-      );
-    default:
-      return null;
-  }
+  const components = {
+    SyncLoader
+  };
+
+  const Loader = components[type];
+
+  return (
+    loading && (
+      <div style={styling} className={styles.loader} data-testid="loader">
+        <Loader color={color} loading={loading} size={size} />
+      </div>
+    )
+  );
 };
 
 export default Loading;

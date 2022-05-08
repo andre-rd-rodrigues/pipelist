@@ -15,12 +15,23 @@ describe("App collapse", () => {
     expect(screen.getByText(/See more/i)).toBeInTheDocument();
   });
 
-  it("should render correct label after clicking", () => {
+  it("should render correct label after button is clicked", () => {
     render(<AppCollapse />);
 
     const buttonElement = screen.getByRole("button");
 
     fireEvent.click(buttonElement);
     expect(screen.getByText(/Close/i)).toBeInTheDocument();
+  });
+
+  it("should show collapse children after 'See more' button is clicked", () => {
+    render(
+      <AppCollapse>
+        <p>App collapse children</p>
+      </AppCollapse>
+    );
+
+    fireEvent.click(screen.getByRole("button"));
+    expect(screen.getByText(/App collapse children/i)).toBeInTheDocument();
   });
 });

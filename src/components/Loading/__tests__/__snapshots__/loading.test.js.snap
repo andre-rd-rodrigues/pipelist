@@ -3,7 +3,7 @@
 exports[`Loading should render correctly 1`] = `
 <div
   className="loader"
-  data-testid="sync_loader"
+  data-testid="loader"
 >
   <span
     className="css-1xdhyk6"

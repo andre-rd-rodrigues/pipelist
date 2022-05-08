@@ -21,7 +21,7 @@ describe("App", () => {
         <App />
       </LoadingProviderMock>
     );
-    expect(screen.getByTestId("sync_loader")).toBeInTheDocument();
+    expect(screen.getByTestId("loader")).toBeInTheDocument();
   });
 
   it("removes loading spinner seconds after", async () => {
@@ -31,7 +31,7 @@ describe("App", () => {
       </LoadingProviderMock>
     );
     await waitFor(() => {
-      expect(screen.queryByTestId("sync_loader")).toBeFalsy();
+      expect(screen.queryByTestId("loader")).toBeFalsy();
     });
   });
 });
