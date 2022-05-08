@@ -4,7 +4,14 @@ exports[`People list should render correctly 1`] = `
 <div
   className="list"
 >
-  <h1>
+  <h1
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateX(-90px) translateZ(0)",
+      }
+    }
+  >
     People's
      List
   </h1>
@@ -14,6 +21,12 @@ exports[`People list should render correctly 1`] = `
   >
     <div
       className="list_add_person"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateX(90px) translateZ(0)",
+        }
+      }
     >
       <button
         className="appButton"
@@ -32,7 +45,15 @@ exports[`People list should render correctly 1`] = `
         Add Person
       </button>
     </div>
-    <div />
+    <div>
+      <div
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      />
+    </div>
   </div>
 </div>
 `;

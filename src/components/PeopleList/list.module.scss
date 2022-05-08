@@ -26,7 +26,6 @@
   border: 2px solid $light-grey;
   border-radius: 3px;
   padding: 1rem 1.7rem;
-  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +50,22 @@
   & img {
     height: 4rem;
     width: 4rem;
+  }
+}
+
+.emptyList {
+  color: $dark;
+  text-align: center;
+  & img {
+    max-width: 30rem;
+    margin-bottom: 1.5rem;
+  }
+  & h2 {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+  }
+  & p {
+    font-size: 0.9rem;
   }
 }
 

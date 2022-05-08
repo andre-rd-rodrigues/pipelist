@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Empty list should render correctly 1`] = `
+<div
+  className="emptyList"
+  style={
+    Object {
+      "opacity": 0,
+    }
+  }
+>
+  <img
+    alt="Start your pipelist!"
+    src="/images/start.png"
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateX(-90px) translateZ(0)",
+      }
+    }
+  />
+  <p
+    style={
+      Object {
+        "opacity": 0,
+        "transform": "translateX(-90px) translateZ(0)",
+      }
+    }
+  >
+    Currently your list is empty. 
+    <b>
+      Add a person
+    </b>
+     to start your very first pipelist!
+  </p>
+</div>
+`;

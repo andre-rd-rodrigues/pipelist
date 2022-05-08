@@ -1,6 +1,8 @@
 import React from "react";
 import ListRow from "components/PeopleList/ListRow";
+import { motion } from "framer-motion";
 import { Droppable, DragDropContext, Draggable } from "react-beautiful-dnd";
+import { containerVariant } from "styles/motion/motionVariants";
 
 const DraggableList = ({ list, setList, onPersonSelect }) => {
   const handleOnDragEnd = (result) => {
@@ -18,23 +20,29 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
       <Droppable droppableId="list">
         {(provided) => (
           <div {...provided.droppableProps} ref={provided.innerRef}>
-            {list?.map((person, index) => (
-              <Draggable
-                key={person.id}
-                draggableId={person?.id.toString()}
-                index={index}
-              >
-                {(provided) => (
-                  <ListRow
-                    innerRef={provided.innerRef}
-                    provided={provided}
-                    onPersonSelect={onPersonSelect}
-                    person={person}
-                  />
-                )}
-              </Draggable>
-            ))}
-            {provided.placeholder}
+            <motion.div
+              variants={containerVariant}
+              initial="hidden"
+              animate="visible"
+            >
+              {list?.map((person, index) => (
+                <Draggable
+                  key={person.id}
+                  draggableId={person?.id.toString()}
+                  index={index}
+                >
+                  {(provided) => (
+                    <ListRow
+                      innerRef={provided.innerRef}
+                      provided={provided}
+                      onPersonSelect={onPersonSelect}
+                      person={person}
+                    />
+                  )}
+                </Draggable>
+              ))}
+              {provided.placeholder}
+            </motion.div>
           </div>
         )}
       </Droppable>

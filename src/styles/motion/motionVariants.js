@@ -5,15 +5,28 @@ const containerVariant = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2
+      staggerChildren: 0.055
     }
   }
 };
 
-const horizontalEntrance = {
+const horizontalEntranceLeft = {
   hidden: {
     opacity: 0,
     x: -90
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring"
+    }
+  }
+};
+const horizontalEntranceRight = {
+  hidden: {
+    opacity: 0,
+    x: 90
   },
   visible: {
     x: 0,
@@ -39,25 +52,11 @@ const verticalEntrance = {
   viewport: { once: true }
 };
 
-const scaleEntrance = {
-  hidden: {
-    opacity: 0,
-    scale: 0
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      type: "spring"
-    }
-  }
-};
-
 const noRepeat = { once: true };
 export {
   containerVariant,
-  horizontalEntrance,
+  horizontalEntranceRight,
+  horizontalEntranceLeft,
   verticalEntrance,
-  scaleEntrance,
   noRepeat
 };

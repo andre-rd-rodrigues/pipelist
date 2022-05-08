@@ -3,6 +3,12 @@
 exports[`Navbar should render correctly 1`] = `
 <nav
   className="navbar navbar navbar-expand-lg fixed-top"
+  style={
+    Object {
+      "opacity": 0,
+      "transform": "translateY(-90px) translateZ(0)",
+    }
+  }
 >
   <span
     className="navbar-brand"

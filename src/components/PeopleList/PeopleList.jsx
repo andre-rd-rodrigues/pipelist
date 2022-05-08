@@ -6,9 +6,15 @@ import PersonModal from "components/AppModals/PersonModal";
 import ErrorPage from "components/ErrorPage/ErrorPage";
 import Notification from "components/Notification/Notification";
 import { LoadingContext } from "context/loading-context";
+import { motion } from "framer-motion";
+import {
+  horizontalEntranceLeft,
+  horizontalEntranceRight
+} from "styles/motion/motionVariants";
 import { data_fields } from "utils/configs";
 import { notificationReload } from "utils/global-utils";
 import DraggableList from "./DraggableList";
+import EmptyList from "./EmptyList";
 import styles from "./list.module.scss";
 
 const PeopleList = () => {
@@ -105,6 +111,24 @@ const PeopleList = () => {
 
     return handlePostNewPerson(form.organization.value, newPerson);
   };
+
+  const ListConditionals = () => {
+    if (networkError) {
+      return <ErrorPage />;
+    } else if (list?.length === 0) {
+      return <EmptyList />;
+    } else {
+      return (
+        <DraggableList
+          key={list}
+          list={list}
+          setList={(newOrderedList) => setList(newOrderedList)}
+          onPersonSelect={handleSelectedPerson}
+        />
+      );
+    }
+  };
+
   //Lifecycle
   useEffect(() => {
     getListOfPeople();
@@ -112,29 +136,29 @@ const PeopleList = () => {
   return (
     <>
       <div className={styles.list}>
-        <h1>{"People's"} List</h1>
+        <motion.h1
+          variants={horizontalEntranceLeft}
+          initial="hidden"
+          animate="visible"
+        >
+          {"People's"} List
+        </motion.h1>
         <hr />
         <div id="list_section">
-          {!networkError ? (
-            <>
-              <div className="list_add_person">
-                <AppButton
-                  onClick={() => setModalAddPerson(true)}
-                  label="Add Person"
-                  color="green"
-                  data-testid="add_person_button"
-                />
-              </div>
-              <DraggableList
-                key={list}
-                list={list}
-                setList={(newOrderedList) => setList(newOrderedList)}
-                onPersonSelect={handleSelectedPerson}
-              />
-            </>
-          ) : (
-            <ErrorPage />
-          )}
+          <motion.div
+            variants={horizontalEntranceRight}
+            initial="hidden"
+            animate="visible"
+            className="list_add_person"
+          >
+            <AppButton
+              onClick={() => setModalAddPerson(true)}
+              label="Add Person"
+              color="green"
+              data-testid="add_person_button"
+            />
+          </motion.div>
+          {ListConditionals()}
         </div>
       </div>
       <PersonModal

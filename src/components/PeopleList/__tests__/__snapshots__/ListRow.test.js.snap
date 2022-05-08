@@ -2,56 +2,61 @@
 
 exports[`Loader should render correctly 1`] = `
 <div
-  className="listRow"
-  data-testid="list_row_div"
-  onClick={[Function]}
-  onKeyPress={[Function]}
-  role="button"
-  tabIndex={0}
+  className="mb-4"
 >
-  <div>
-    <h4>
-      Mila Benson
-    </h4>
-    <div
-      className="list_row_person_address_div"
-    >
-      <svg
-        enableBackground="new 0 0 24 24"
-        height={24}
-        viewBox="0 0 24 24"
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g>
-          <rect
-            fill="none"
-            height={24}
-            width={24}
-          />
-        </g>
-        <g>
-          <path
-            d="M17,11V3H7v4H3v14h8v-4h2v4h8V11H17z M7,19H5v-2h2V19z M7,15H5v-2h2V15z M7,11H5V9h2V11z M11,15H9v-2h2V15z M11,11H9V9h2 V11z M11,7H9V5h2V7z M15,15h-2v-2h2V15z M15,11h-2V9h2V11z M15,7h-2V5h2V7z M19,19h-2v-2h2V19z M19,15h-2v-2h2V15z"
-            fill="currentColor"
-          />
-        </g>
-      </svg>
-      <p>
-        Rite Aid Pharmacy
-      </p>
-    </div>
-  </div>
   <div
-    className="avatar"
-    id="app_avatar"
-    style={
-      Object {
-        "backgroundImage": "url(https://pipedrive-profile-pics.s3.amazonaws.com/c662095da1a8169cb828f10740d0d69dba97aa5b_128.jpg)",
-        "height": "4rem",
-        "width": "4rem",
+    className="listRow"
+    data-testid="list_row_div"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={Object {}}
+    tabIndex={0}
+  >
+    <div>
+      <h4>
+        Mila Benson
+      </h4>
+      <div
+        className="list_row_person_address_div"
+      >
+        <svg
+          enableBackground="new 0 0 24 24"
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <rect
+              fill="none"
+              height={24}
+              width={24}
+            />
+          </g>
+          <g>
+            <path
+              d="M17,11V3H7v4H3v14h8v-4h2v4h8V11H17z M7,19H5v-2h2V19z M7,15H5v-2h2V15z M7,11H5V9h2V11z M11,15H9v-2h2V15z M11,11H9V9h2 V11z M11,7H9V5h2V7z M15,15h-2v-2h2V15z M15,11h-2V9h2V11z M15,7h-2V5h2V7z M19,19h-2v-2h2V19z M19,15h-2v-2h2V15z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+        <p>
+          Rite Aid Pharmacy
+        </p>
+      </div>
+    </div>
+    <div
+      className="avatar"
+      id="app_avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://pipedrive-profile-pics.s3.amazonaws.com/c662095da1a8169cb828f10740d0d69dba97aa5b_128.jpg)",
+          "height": "4rem",
+          "width": "4rem",
+        }
       }
-    }
-  />
+    />
+  </div>
 </div>
 `;
