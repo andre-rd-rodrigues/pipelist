@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`People list should render correctly 1`] = `
+<div
+  className="list"
+>
+  <h1>
+    People's
+     List
+  </h1>
+  <hr />
+  <div
+    id="list_section"
+  >
+    <div
+      className="list_add_person"
+    >
+      <button
+        className="appButton"
+        color="green"
+        data-testid="add_person_button"
+        label="Add Person"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "border": false,
+            "color": "white",
+          }
+        }
+      >
+        Add Person
+      </button>
+    </div>
+    <div />
+  </div>
+</div>
+`;

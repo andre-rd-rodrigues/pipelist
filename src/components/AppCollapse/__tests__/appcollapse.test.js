@@ -3,19 +3,19 @@ import reactTestRenderer from "react-test-renderer";
 import AppCollapse from "../AppCollapse";
 
 describe("App collapse", () => {
-  it("renders correctly", () => {
+  it("should render correctly", () => {
     const wrapper = reactTestRenderer.create(<AppCollapse />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("renders correct initial label", () => {
+  it("should render correct initial label", () => {
     render(<AppCollapse />);
 
     expect(screen.getByText(/See more/i)).toBeInTheDocument();
   });
 
-  it("renders correct label after clicking", () => {
+  it("should render correct label after clicking", () => {
     render(<AppCollapse />);
 
     const buttonElement = screen.getByRole("button");

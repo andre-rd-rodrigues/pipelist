@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { LoadingProviderMock, mocked_list } from "utils/test-utils";
+import { LoadingProviderMock } from "mocks/LoadingProviderMock";
+import { mocked_list } from "utils/test-utils";
 import DraggableList from "../DraggableList";
 
 let props;

@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
+import { LoadingProviderMock } from "mocks/LoadingProviderMock";
 import reactTestRenderer from "react-test-renderer";
-import { LoadingProviderMock, mocked_list } from "utils/test-utils";
+import { mocked_list } from "utils/test-utils";
 import ListRow from "../ListRow";
 
 describe("Loader", () => {
@@ -43,7 +44,7 @@ describe("Loader", () => {
     expect(screen.getByText(/Andre Pharmacy/i)).toBeInTheDocument();
   });
 
-  it("should run onPersonSelect when div[role='button'] clicked", () => {
+  it("should run onPersonSelect when component is clicked", () => {
     render(
       <LoadingProviderMock>
         <ListRow {...props} />

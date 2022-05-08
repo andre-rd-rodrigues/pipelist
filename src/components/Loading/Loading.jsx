@@ -12,13 +12,15 @@ const Loading = ({
   switch (type) {
     case "SyncLoader":
       return (
-        <div
-          style={styling}
-          className={styles.loader}
-          data-testid="sync_loader"
-        >
-          <SyncLoader color={color} loading={loading} size={size} />
-        </div>
+        loading && (
+          <div
+            style={styling}
+            className={styles.loader}
+            data-testid="sync_loader"
+          >
+            <SyncLoader color={color} loading={loading} size={size} />
+          </div>
+        )
       );
     default:
       return null;

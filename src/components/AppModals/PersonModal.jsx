@@ -8,14 +8,14 @@ import styles from "./appmodal.module.scss";
 import ConfirmationModal from "./ConfirmationModal";
 
 function PersonModal(props) {
-  const { person, onHide, show, onDeletePerson, onOpenModal } = props;
+  const { person, onHide, show, deletePerson, openModal } = props;
   const [confirmationModal, setConfirmationModal] = useState(false);
 
   //Actions
   const handleConfirmationModalHide = (responseType) => {
     setConfirmationModal(false);
-    if (responseType === "cancel") return onOpenModal();
-    return onDeletePerson(person?.id);
+    if (responseType === "cancel") return openModal();
+    return deletePerson(person?.id);
   };
 
   return (

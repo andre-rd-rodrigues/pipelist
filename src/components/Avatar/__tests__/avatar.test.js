@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
+import { LoadingProviderMock } from "mocks/LoadingProviderMock";
 import reactTestRenderer from "react-test-renderer";
-import { LoadingProviderMock } from "utils/test-utils";
 import Avatar from "../Avatar";
 
 describe("Avatar", () => {
-  it("renders correctly", () => {
+  it("should render correctly", () => {
     const wrapper = reactTestRenderer.create(
       <LoadingProviderMock>
         <Avatar />
@@ -13,7 +13,7 @@ describe("Avatar", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("renders upload component from profileId", () => {
+  it("should render upload picture component when given a profileId", () => {
     render(
       <LoadingProviderMock>
         <Avatar profileId={1} />

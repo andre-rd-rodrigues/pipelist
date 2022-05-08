@@ -122,6 +122,7 @@ const PeopleList = () => {
                   onClick={() => setModalAddPerson(true)}
                   label="Add Person"
                   color="green"
+                  data-testid="add_person_button"
                 />
               </div>
               <DraggableList
@@ -139,10 +140,10 @@ const PeopleList = () => {
       <PersonModal
         show={modalPerson}
         onHide={() => setModalPerson(false)}
-        onOpenModal={() => setModalPerson(true)}
+        openModal={() => setModalPerson(true)}
         type="person"
         person={personSelected}
-        onDeletePerson={deletePerson}
+        deletePerson={deletePerson}
       />
       <AddPersonModal
         show={modalAddPerson}

@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import List from "components/PeopleList/PeopleList";
 import Loading from "components/Loading/Loading";
 import Navbar from "components/Navbar/Navbar";
+import List from "components/PeopleList/PeopleList";
 import { LoadingContext } from "context/loading-context";
 import { ToastContainer } from "react-toastify";
 import styles from "./app.module.scss";
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <List />
       <ToastContainer autoClose={1300} progressClassName="progressBar" />
-      {loading && <Loading loading={loading} />}
+      <Loading loading={loading} />
     </div>
   );
 }

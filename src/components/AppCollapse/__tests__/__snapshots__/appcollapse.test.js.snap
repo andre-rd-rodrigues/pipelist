@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App collapse renders correctly 1`] = `
+exports[`App collapse should render correctly 1`] = `
 <div
   className="collapse"
 >

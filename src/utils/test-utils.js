@@ -1,16 +1,3 @@
-import { LoadingProvider } from "context/loading-context";
-
-const LoadingProviderMock = ({ children }) => (
-  <LoadingProvider
-    value={{
-      loading: false,
-      setLoading: jest.fn()
-    }}
-  >
-    {children}
-  </LoadingProvider>
-);
-
 const mocked_list = [
   {
     id: 103,
@@ -101,4 +88,4 @@ const mocked_list = [
   }
 ];
 
-export { mocked_list, LoadingProviderMock };
+export { mocked_list };

@@ -6,7 +6,7 @@ import { Form, Modal, Row, Col } from "react-bootstrap";
 import styles from "./appmodal.module.scss";
 
 function AddPersonModal(props) {
-  const { person, onHide, show, onSubmit } = props;
+  const { onHide, show, onSubmit } = props;
 
   //Lifecycle
   useEffect(() => {
@@ -31,11 +31,7 @@ function AddPersonModal(props) {
       </Modal.Header>
       <Modal.Body>
         <div className="person_modal_title_details">
-          <Avatar
-            src={person?.picture_id?.pictures[128]}
-            alt="Pipelist avatar"
-            size={6}
-          />
+          <Avatar alt="Pipelist avatar" size={6} />
         </div>
         <div>
           <Form className="mt-4" onSubmit={onSubmit}>
@@ -82,7 +78,12 @@ function AddPersonModal(props) {
               </Form.Group>
             </AppCollapse>
             <div className="d-flex mt-3 mb-2 justify-content-between">
-              <Button label="Back" onClick={onHide} type="button" />
+              <Button
+                label="Back"
+                onClick={onHide}
+                type="button"
+                data-testid="back_button"
+              />
               <Button label="Submit" color="green" type="submit" />
             </div>
           </Form>

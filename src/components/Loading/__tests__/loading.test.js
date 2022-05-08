@@ -1,33 +1,31 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import reactTestRenderer from "react-test-renderer";
 import Loading from "../Loading";
 
-describe("Loader", () => {
+describe("Loading", () => {
   let props;
 
   props = {
     color: "rgb(54, 215, 183)",
-    loading: false,
+    loading: true,
     size: 20,
     type: "SyncLoader"
   };
 
   it("should render correctly", () => {
-    const wrapper = reactTestRenderer.create(
-      <Loading {...props} loading={true} />
-    );
+    const wrapper = reactTestRenderer.create(<Loading {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it("should show loader when loading is true", () => {
-    render(<Loading {...props} loading={true} />);
+    render(<Loading {...props} />);
 
     expect(screen.getByTestId("sync_loader")).toBeInTheDocument();
   });
 
-  it("should show proper spinner according to prop trype", () => {
-    render(<Loading {...props} loading={true} />);
+  it("should not show loader when loading is false", () => {
+    render(<Loading {...props} loading={false} />);
 
-    expect(screen.getByTestId("sync_loader")).toBeInTheDocument();
+    expect(screen.queryByTestId("sync_loader")).not.toBeInTheDocument();
   });
 });
