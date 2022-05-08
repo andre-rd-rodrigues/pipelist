@@ -1,48 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List Modal details should render correctly 1`] = `
-<div
-  className="align-items-baseline justify-content-center row"
->
-  <div
-    className="col-lg-4 col-md-4 col-sm-4"
-  >
-    <div
-      className="person_modal_details_field_label"
-    >
-      <h5 />
-    </div>
-  </div>
-  <div
-    className="col-lg-8 col-md-8 col-sm-8"
-  >
-    <p />
-  </div>
-</div>
-`;
-
 exports[`List modal details should render correctly 1`] = `
-<div
-  className="align-items-baseline justify-content-center row"
->
-  <div
-    className="col-lg-4 col-md-4 col-sm-4"
-  >
-    <div
-      className="person_modal_details_field_label"
-    >
-      <h5 />
-    </div>
-  </div>
-  <div
-    className="col-lg-8 col-md-8 col-sm-8"
-  >
-    <p />
-  </div>
-</div>
-`;
-
-exports[`Loader should render correctly 1`] = `
 <div
   className="align-items-baseline justify-content-center row"
 >
