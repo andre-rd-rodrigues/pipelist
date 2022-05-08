@@ -7,7 +7,7 @@ The project is connected to Pipedrive's API.
 
 1. Clone the repository to your computer
 
-2. Add an .env file to your root folder
+2. Add an `.env` file to the root folder
 
 3. Add your default Pipedrive API key or add my personal key from the "Challenge Delivery" email, in this format:
 
