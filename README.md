@@ -3,7 +3,7 @@
 This project is the result of a challenge, which consisted in creating a single page application, containing a people's list. Essentially Pipelist is a drag and drop list, where the user can interact through different actions like adding and deleting a person, reordering the list, and editing a person's picture.
 The project is connected to Pipedrive's API.
 
-## Run
+## Start
 
 1. Clone the repository to your computer
 
