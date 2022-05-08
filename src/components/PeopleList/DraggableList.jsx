@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import ListRow from "components/PeopleList/ListRow";
 import { Droppable, DragDropContext, Draggable } from "react-beautiful-dnd";
 
@@ -12,13 +12,6 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
 
     setList(newOrderedList);
   };
-
-  const getItemStyle = (draggableStyle) => ({
-    userSelect: "none",
-    padding: 8 * 2,
-    margin: `0 0 ${8}px 0`,
-    ...draggableStyle
-  });
 
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
@@ -37,7 +30,6 @@ const DraggableList = ({ list, setList, onPersonSelect }) => {
                     provided={provided}
                     onPersonSelect={onPersonSelect}
                     person={person}
-                    style={getItemStyle(provided.draggableProps.style)}
                   />
                 )}
               </Draggable>

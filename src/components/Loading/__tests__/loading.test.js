@@ -1,6 +1,6 @@
-const { render, screen } = require("@testing-library/react");
-const reactTestRenderer = require("react-test-renderer");
-const { default: Loading } = require("../Loading");
+import { render } from "@testing-library/react";
+import reactTestRenderer from "react-test-renderer";
+import Loading from "../Loading";
 
 describe("Loader", () => {
   let props;

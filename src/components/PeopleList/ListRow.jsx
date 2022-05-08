@@ -20,6 +20,7 @@ const ListRow = ({ onPersonSelect, person, provided }) => {
       ref={innerRef}
       {...draggableProps}
       {...dragHandleProps}
+      data-testid="list_row_div"
     >
       <div>
         <h4>{`${person?.first_name} ${person?.last_name}`}</h4>

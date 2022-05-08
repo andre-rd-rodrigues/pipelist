@@ -1,23 +1,14 @@
 import { render, screen } from "@testing-library/react";
-import { LoadingProvider } from "context/loading-context";
 import reactTestRenderer from "react-test-renderer";
+import { LoadingProviderMock } from "utils/test-utils";
 import PeopleList from "../PeopleList";
 
 describe("People list", () => {
-  let providerProps = {
-    loading: false,
-    setLoading: jest.fn()
-  };
-
-  const MockProvider = ({ children }) => (
-    <LoadingProvider value={providerProps}>{children}</LoadingProvider>
-  );
-
-  it("renders correctly", () => {
+  it("should render correctly", () => {
     const wrapper = reactTestRenderer.create(
-      <MockProvider>
+      <LoadingProviderMock>
         <PeopleList />
-      </MockProvider>
+      </LoadingProviderMock>
     );
 
     expect(wrapper).toMatchSnapshot();
