@@ -20,6 +20,10 @@ The project is connected to Pipedrive's API.
 
 5. Have fun!
 
+## Run tests
+`npm test`
+
+
 ## Main structure
 
 Context:
