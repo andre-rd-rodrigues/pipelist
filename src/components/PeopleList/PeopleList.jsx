@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import axios from "api/pipelistAxios";
-import AppButton from "components/AppButton/AppButton";
+import Button from "components/AppButton/AppButton";
 import AddPersonModal from "components/AppModals/AddPersonModal";
 import PersonModal from "components/AppModals/PersonModal";
 import ErrorPage from "components/ErrorPage/ErrorPage";
@@ -151,7 +151,7 @@ const PeopleList = () => {
             animate="visible"
             className="list_add_person"
           >
-            <AppButton
+            <Button
               onClick={() => setModalAddPerson(true)}
               label="Add Person"
               color="green"
